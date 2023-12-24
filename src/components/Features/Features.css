@@ -1,0 +1,70 @@
+.features {
+  overflow: hidden;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features .feat {
+  margin-bottom: 30px;
+}
+.features .feat p {
+  line-height: 2em;
+}
+.features .feat span.glyphicon {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.iconfadde {
+  font-size: 3rem;
+  color: #d0a946;
+}
+
+.iconfadde1 {
+  display: flex;
+  justify-content: center;
+}
+
+.as-service-box {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin: 1px;
+  padding: 23px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.as-service-box:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-left: 10px solid #726e97;
+}
+.css-182ql0r-Media-root {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+}
+.features-box-part {
+  margin: 20px;
+  margin-left: 40px;
+  width: 28%;
+}
+
+@media only screen and (max-width: 767px) {
+  .features-box-part {
+    width: 90%;
+    position: relative;
+    right: 5%;
+  }
+}

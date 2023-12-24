@@ -1,0 +1,186 @@
+.fancy-cards {
+  background: var(--tertiary-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (min-width: 1910px) {
+  .fancy-cards {
+    width: 100%;
+    padding: 40px 12rem 40px 14rem;
+  }
+}
+
+.header_for_selling {
+  color: #fbcb04;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --purpButton: #004ca3;
+  --purpHeading: #663399;
+  --purpBody: #663399;
+}
+
+section.header {
+  position: relative;
+  padding: 60px;
+}
+section.header div.title {
+  position: absolute;
+  bottom: 0px;
+}
+section.header div.title h1 {
+  font-size: 2rem;
+}
+section.header div.title p {
+  margin: 0px;
+}
+section.header div.title a {
+  font-size: 12px;
+  font-family: monospace;
+  text-decoration: none;
+  color: #c8c8d4;
+  transition: all 0.16s ease-in-out;
+}
+section.header div.title a:hover {
+  background: var(--purpButton);
+  color: white;
+}
+
+section.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2% 5%;
+  margin-bottom: -2%;
+}
+
+article.card-container__card {
+  position: relative;
+  width: 95%;
+  min-height: 200px;
+  padding: 40px 40px 20px;
+  border-radius: 0rem 3rem 2rem 2rem;
+  box-shadow: 5px 5px 25px 0px rgba(204, 204, 223, 0.6);
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+  margin-bottom: 25px;
+  background-color: var(--white-bg);
+}
+
+article.card-container__card div.card-container__card__content {
+  width: 100%;
+  height: 100%;
+}
+article.card-container__card div.card-container__card__content h3 {
+  font-size: 1.8rem;
+  font-weight: 600 !important;
+}
+article.card-container__card div.card-container__card__content p {
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+  font-size: 22px !important;
+  line-height: 150%;
+}
+article.card-container__card div.card-container__card__content button {
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+article.card-container__card:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 0%;
+  background: var(--secondary-bg);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px #02355a;
+}
+article.card-container__card:hover {
+  box-shadow: 0px 0px 5px #02355a;
+  transform: scale(1);
+}
+article.card-container__card:hover div.card-container__card__content h3 {
+  color: var(--text);
+}
+article.card-container__card:hover div.card-container__card__content p {
+  color: var(--text);
+}
+article.card-container__card:hover div.card-container__card__content button {
+  background: var(--text-primary);
+  color: var(--text-white);
+  /*  border: 1px solid var(--purpButton); */
+}
+article.card-container__card:hover:after {
+  height: 100%;
+}
+
+.learn-button {
+  background: transparent;
+  padding: 9px 16px;
+  border-radius: 4px;
+  /* border: 1px solid #dbf0ff; */
+  color: var(--purpButton);
+  font-family: "Open sans", sans-serif;
+  font-size: 14px;
+}
+
+.blue-btn {
+  background-color: var(--primary-bg);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  margin: 20px 0px;
+  border: 2px solid transparent;
+  transition: 300ms ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+  section.card-container {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    padding: 40px 0px;
+  }
+
+  .article.card-container__card {
+    padding: 40px 10px !important;
+    width: 100% !important;
+  }
+
+  .header_for_selling {
+    padding: 20px 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  article.card-container__card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .learn-button {
+    width: 100%;
+  }
+  .fancy-cards {
+    padding: 40px 25px;
+    padding-bottom: 0px;
+  }
+}
+
+.learn-button:hover .arrow-hover {
+  transform: translateX(20px) !important;
+}

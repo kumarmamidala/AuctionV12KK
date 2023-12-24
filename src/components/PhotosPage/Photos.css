@@ -1,0 +1,47 @@
+/* photos section styling */
+/* photos containere */
+.photos {
+  background-color: #e0f0fc;
+  padding-bottom: 20px;
+  padding: 40px 60px;
+}
+
+/* the p and h inside photos */
+.photosContent {
+  justify-content: center;
+  width: 100%;
+}
+.thumbnail {
+  margin: 0 11px;
+  height: 10%;
+  width: 10%;
+}
+
+.photosCorousel {
+  margin: 0px 10%;
+  margin-bottom: 20px;
+}
+
+.specialities-title {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 765px) {
+  .photosContent {
+    justify-content: center;
+    width: 90%;
+    margin: 0px 5%;
+  }
+
+  .photosCorousel {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .photos {
+    padding: 30px;
+  }
+  .specialities-title {
+    text-align: left !important;
+    padding-bottom: 20px;
+  }
+}

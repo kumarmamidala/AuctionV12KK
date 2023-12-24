@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text: black;
+  --text-white: white;
+  --text-gold: #fbcb04;
+  --text-primary: #1b4965;
+  --text-secondary: #cae9ff;
+  --text-tertiary: #bee9e8;
+  --text-quad: #62b6cb;
+  --text-pent: #5fa8d3;
+  --primary-bg: #1b4965;
+  --secondary-bg: #cae9ff;
+  --tertiary-bg: #bee9e8;
+  --quad-bg: #62b6cb;
+  --pent-bg: #5fa8d3;
+  --white-bg: white;
+  --black-bg: black;
+  --primary-btn: #1b4965;
+  --secondary-btn: #cae9ff;
+  --tertiary-btn: #bee9e8;
+  --quad-btn: #62b6cb;
+  --pent-btn: #5fa8d3;
+
+  --default-image: url(./components/Hero/media/darkblue-bg2.jpg);
+}
+
+/*
+
+Green color palette:
+
+:root {
+  --text: black;
+  --text-white: white;
+  --text-gold: #fbcb04;
+  --text-primary: #87bba2;
+  --primary-bg: #87bba2;
+  --secondary-bg: #c9e4ca;
+  --tertiary-bg: #f4f9f6;
+  --white-bg: white;
+  --black-bg: black;
+  --primary-btn: #87bba2;
+  --secondary-btn: #c9e4ca;
+} */
+
+/*
+
+Purple color palette:
+
+:root {
+  --text: black;
+  --text-white: white;
+  --text-gold: #fbcb04;
+  --text-primary: #9e32d8;
+  --primary-bg: #551289;
+  --secondary-bg: #f3e6ff;
+  --tertiary-bg: #e9d1ff;
+  --white-bg: white;
+  --black-bg: black;
+  --primary-btn: #551289;
+  --secondary-btn: #001f3f;
+}
+
+*/
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fde7e7;
+    --background: #242424;
+    --primary: #b32100;
+    --secondary: #272711;
+    --accent: #ff542e;
+  }
+} */
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--text-tertiary) !important;
+}
+
+.text-quad {
+  color: var(--text-quad) !important;
+}
+
+.text-pent {
+  color: var(--text-pent) !important;
+}
+
+.palettes {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  z-index: 99999;
+  color: var(--text-white);
+  border-radius: 8px;
+  display: flex;
+}
+
+.palettes :first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.palettes :last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.app-btn {
+  padding: 5px;
+}
+
+.blue-main {
+  background-color: #2153ac;
+}
+
+.green-main {
+  background-color: #87bba2;
+}
+
+.purple-main {
+  background-color: #551289;
+}
+
+.default-main {
+  background-color: #25cbd3;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Mukta", sans-serif;
+}
+
+.backface-visible {
+  backface-visibility: visible;
+}
+
+.backface-invisible {
+  backface-visibility: hidden;
+}

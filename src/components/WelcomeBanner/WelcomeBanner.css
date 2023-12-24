@@ -1,0 +1,61 @@
+.welcame-banner-bg {
+  background-size: cover;
+  background: var(--white-bg);
+  z-index: 2;
+  position: relative;
+}
+
+.welcame-banner-bg1 {
+  background-size: cover;
+  background: linear-gradient(
+    180deg,
+    #030a2e 0%,
+    rgba(255, 255, 255, 1) 12.5%,
+    rgba(255, 255, 255, 1) 10%
+  );
+}
+
+.sub-text {
+  color: #fbcb04;
+  font-size: larger;
+}
+
+.w-service {
+  color: #c6c6c6;
+}
+
+.welcome-text {
+  font-family: "Carter One", cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 33px;
+  margin-top: 20px;
+}
+
+.button-design-1 {
+  background-color: #fbcb04;
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+
+.button-design-1:hover {
+  background-color: #ffe053;
+  color: var(--text);
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome-banner-content {
+    order: 2;
+  }
+  .welcome-banner-image {
+    order: 1;
+  }
+  .welcome-container {
+    width: 90%;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,244 @@
+.Content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  z-index: 2;
+  transition: height 5ms ease-in-out;
+  display: none;
+}
+
+.Content.show {
+  height: 84%;
+  background-color: white;
+  width: 60%;
+  display: block;
+  overflow: scroll;
+  border-bottom-left-radius: 12px;
+}
+
+.get-back-section {
+  position: absolute;
+  width: 40%;
+  background-color: transparent;
+  padding: 20px;
+  padding-top: 0px;
+  bottom: 0px;
+  z-index: 9;
+}
+
+.popup-bid-history {
+  padding: 20px;
+  height: 187px !important;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+.bid-history-section {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  height: 240px;
+  overflow: scroll;
+}
+
+.bid-history-item {
+  box-shadow: 0px 0px 4px grey;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 5px;
+  background: linear-gradient(45deg, #25cbd308, #0000ff0a);
+}
+
+.bid-input {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.bid-history-loader-img {
+  width: 80px;
+  margin: auto;
+}
+
+.bid1-input {
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid black;
+  border-right: 0px;
+  border-radius: 4px;
+  padding: 7px 10px;
+  width: 70%;
+  margin-top: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.auction-price-card {
+  background-color: var(--white-bg);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-bottom: 1%;
+  border-left: 6px solid black !important;
+}
+
+.bid1-input:focus {
+  outline: 0px;
+}
+
+.popup-submit {
+  margin-top: 10px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  margin-right: 10px !important;
+  margin-bottom: 0px !important;
+}
+
+.counting {
+  width: 99%;
+}
+
+.shipping-style {
+  font-size: 17px;
+  color: var(--text);
+  font-weight: 300;
+}
+
+.popup-title {
+  background: var(--secondary-bg);
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+.popup-flex {
+  height: 100%;
+}
+
+.PopupContentt {
+  height: 100%;
+}
+
+.popup-left {
+  width: 60%;
+  padding: 20px;
+}
+
+.popup-left .heading-sub {
+  color: var(--text) !important;
+}
+
+.popup-left-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.popup-left-list {
+  display: flex;
+  justify-content: start;
+}
+
+.popup-right {
+  width: 40%;
+  background: #f1eff7;
+  /* padding: 10px 20px; */
+  text-align: left;
+  border-bottom-right-radius: 8px;
+}
+
+.popup-input-amount {
+  padding: 6px 10px;
+  border: 1px solid black;
+  width: 60%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right: none;
+  font-family: "Haffer";
+}
+
+.popup-input-amount:focus {
+  outline: 0px;
+}
+
+.popup-input-section {
+  margin: 20px;
+  margin-left: 30px;
+}
+
+.paragraph-popup-small {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.popup-min-amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin: 10px 0px;
+}
+
+.popup-content {
+  margin: auto;
+  background: #fff;
+  width: 60% !important;
+  /* padding: 5px; */
+  /* border: 1px solid #d7d7d7; */
+  border: 0px !important;
+  padding: 0px !important;
+  border-radius: 10px !important;
+}
+
+.auction-product-left {
+  width: 70%;
+  display: flex;
+}
+
+.auction-product-right {
+  width: 30%;
+  justify-content: right;
+  color: var(--text);
+}
+
+@media only screen and (min-width: 1910px) {
+  .popup-content {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .popup-flex {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .popup-left {
+    order: 2;
+    width: 100%;
+  }
+  .popup-left-list {
+    flex-direction: column;
+  }
+  .popup-right {
+    order: 1;
+    width: 100%;
+  }
+  .popup-content {
+    width: 90% !important;
+  }
+  .popup-left-btns {
+    flex-direction: column;
+  }
+}

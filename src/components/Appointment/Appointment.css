@@ -1,0 +1,26 @@
+.help-appointment-btn {
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+.help-appointment-btn:hover {
+  color: var(--text) !important;
+  background-color: #ffe053 !important;
+}
+
+.form-control {
+  border: 0px;
+  padding: 0px;
+}
+
+.input-bordered {
+  border: 1px solid grey;
+  width: 100%;
+  padding: 7px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.card {
+  padding: 20px 10px;
+}

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 767px) {
+  .page1-width {
+    max-width: 80% !important;
+  }
+  .measure {
+    margin-left: 0px !important;
+  }
+}

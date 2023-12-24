@@ -1,0 +1,192 @@
+.featured-cards-total {
+  width: 88%;
+  margin-left: 6%;
+  gap: 20px;
+}
+
+.green-btn {
+  background-color: #67c381;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 30px;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  /* margin: 20px 0px; */
+  border: 2px solid transparent;
+  transition: 300ms ease-in-out;
+}
+
+.green-btn:hover {
+  background-color: white;
+  border: 2px solid #67c381;
+  color: #67c381;
+}
+
+.example-warper {
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px #cfcece dashed;
+}
+
+/* .featured-head {
+  color: #fbcb04;
+  font-weight: bold;
+  margin: 10px 0px -10px;
+} */
+.featued-partt {
+  background-image: url(./../Hero/media/Two5.png);
+  background: var(--pent-bg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 5%;
+  padding: 2%;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1910px) {
+  .featued-partt {
+    width: 100%;
+    padding: 30px 15rem 3rem 16rem;
+  }
+}
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 7px 16px;
+  display: inline-block;
+  margin: 10px 15px;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700 !important;
+  background-color: #fbcb04;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border-bottom: 2px solid white;
+}
+
+.button:hover {
+  background-color: #ffe053;
+  text-decoration: none !important;
+  color: var(--text);
+}
+/*
+  card 
+  */
+.card {
+  font-size: 12px;
+}
+.card > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.modal {
+  font-size: 12px;
+  background-color: #2dc7e2;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  margin: auto;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.example-warper-start {
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px #cfcece dashed;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.menu-item {
+  cursor: pointer;
+  padding: 5px;
+  height: 28px;
+  border-top: 1px solid rgb(187, 187, 187);
+}
+.menu-item:hover {
+  color: #2980b9;
+}
+
+.see-all-btn {
+  width: fit-content;
+}
+
+.domain-name-home {
+  font-size: 28px;
+  font-family: "Mukta", sans-serif;
+}
+
+.domain-price-home {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .featured-title-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .see-all-btn {
+    width: 95%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 62px;
+  }
+  .featued-partt {
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
+}

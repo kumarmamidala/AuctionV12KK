@@ -1,0 +1,34 @@
+.trending-icon {
+  margin-right: 20px;
+  font-size: 30px;
+  color: #fbcb04;
+  width: 53px;
+  border-radius: 18px;
+  height: 35px;
+}
+
+.Trending-part {
+  padding: 5%;
+  padding-top: 2px;
+  background-size: cover;
+  background-image: url(./media/bg.png);
+  background-attachment: fixed;
+}
+.Trending-item {
+  border: 2px solid;
+}
+.trend-head {
+  color: #fbcb04;
+}
+.Trending-item {
+  color: var(--text);
+  cursor: pointer;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px #3373a0;
+  border: 3px solid transparent;
+}
+
+.Trending-item:hover {
+  border: 3px solid #3373a0;
+}

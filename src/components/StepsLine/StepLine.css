@@ -1,0 +1,40 @@
+.step-image-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.step-image {
+  height: 120px;
+  width: 210px;
+  /* margin-left: auto; */
+  place-items: center;
+}
+
+.sell-flow {
+  z-index: 2;
+  position: relative;
+  padding: 4rem 6rem;
+  background-color: var(--white-bg);
+}
+
+.red-btn1 {
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--text-primary);
+  background: var(--text-white);
+  border-radius: 0px;
+  font-size: 24px !important;
+  transition: all 300ms ease-in-out;
+}
+
+.step-card:hover .red-btn1 {
+  border: 2px solid var(--primary-bg);
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1910px) {
+  .sell-flow {
+    width: 100%;
+    padding: 40px 16rem 40px 16rem;
+  }
+}

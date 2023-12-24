@@ -1,0 +1,854 @@
+/* -------------********************************---------------- 
+                          MAIN STYLING
+ --------------- ********************************---------------- */
+
+/* -------------********************************---------------- 
+        Styling for responsiveness can be found at the end of the document 
+-------------********************************----------------  */
+
+.profile-page {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  min-height: 55vh;
+}
+
+.products-part {
+  width: 95%;
+}
+
+.profile-inner-part {
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  box-shadow: 0px 0px 0px 1px #fbcb04;
+  background: white;
+}
+
+.personal-info-heading {
+  background: transparent;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1px solid #ffffffad;
+}
+
+.profile-part {
+  width: 27%;
+  margin-left: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.title-sub1 {
+  margin-left: 0px;
+  font-family: "Mukta";
+  font-size: 18px;
+  line-height: 30px;
+  color: grey;
+  text-transform: none;
+  padding: 0px 5px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.basic-info1 {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.basic-info {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-part {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info-part1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-part {
+  width: fit-content;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 3px grey;
+  border-left: 4px solid var(--text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.info-part::after {
+  content: "";
+  width: 160%;
+  background-color: var(--tertiary-bg);
+  position: absolute;
+  z-index: 0;
+  transform: rotateX(93deg);
+  top: -98px;
+  height: 43%;
+  transform: rotateZ(217deg);
+  left: -108px;
+}
+
+.profile-info-part {
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 1px 1px 2px grey;
+  padding: 29px 10px;
+  border-top: 4px solid var(--text-primary);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.actual-address {
+  font-family: "Metropolis-semibold";
+}
+
+/* .profile-info-part::after {
+  content: "";
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: 44;
+  transform: rotateX("70deg");
+  top: 0px;
+  height: 60%;
+} */
+
+.profile-info-part::after {
+  content: "";
+  width: 160%;
+  background-color: var(--tertiary-bg);
+  position: absolute;
+  z-index: 0;
+  transform: rotateX(93deg);
+  top: 6px;
+  height: 55%;
+  transform: rotateZ(155deg);
+  left: -94px;
+}
+
+.profile-info-part img,
+h1 {
+  z-index: 1;
+  position: relative;
+}
+
+.person-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.profile-person-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.profile-name {
+  font-family: "Mukta";
+  font-size: 28px;
+  line-height: 30px;
+  color: var(--text);
+  text-transform: none;
+  padding: 0px 5px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 30px 0px 20px;
+}
+
+.user-product-image {
+  height: 180px;
+  width: 300px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+.MuiBox-root {
+  height: 100% !important;
+}
+
+.tab-content-custom {
+  width: 80%;
+  padding-top: 70px;
+}
+
+.domains-part {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.domain-part {
+  background: #101c4c;
+  padding: 20px;
+  color: white;
+  font-family: "Metropolis-regular";
+  border-radius: 12px;
+  position: relative;
+  width: 40%;
+}
+
+/* .domain-status {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: green;
+  padding: 2px 8px;
+  border-radius: 10px;
+} */
+
+.domain-status {
+  position: absolute;
+  border-bottom: 25px solid #4d9c40;
+  border-left: 26px solid transparent;
+  border-right: 28px solid transparent;
+  height: 0;
+  width: 100px;
+  text-align: center;
+  transform: rotate(45deg);
+  right: -33px;
+  top: 5px;
+  color: #fff;
+}
+
+.domain-status::before {
+  content: "";
+  border-bottom: 11px solid #2d6824;
+  border-left: 9px solid transparent;
+  transform: rotate(45deg);
+  left: -23px;
+  top: 19px;
+  position: absolute;
+}
+.domain-status:after {
+  content: "";
+  border-bottom: 11px solid #2d6824;
+  border-left: 11px solid transparent;
+  transform: rotate(45deg);
+  left: 61px;
+  top: 19px;
+  position: absolute;
+}
+
+.domain-name-current {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 40px 0px;
+}
+
+.domain-name-current-main {
+  font-size: 45px;
+  font-weight: 800;
+  margin: 20px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8080802e;
+}
+
+.back-btn-domain {
+  background: #101c4c;
+  color: white;
+  border-radius: 8px;
+  font-size: 34px;
+  padding: 4px;
+}
+
+/* .MuiTabs-scroller {
+  background: #80808021;
+} */
+
+.MuiButtonBase-root-MuiTab-root {
+  display: inherit;
+  text-align: left;
+  align-items: self-start;
+}
+
+.MuiTab-root {
+  display: inherit !important;
+  text-align: left !important;
+  align-items: flex-start !important; /* Change "self-start" to "flex-start" for correct alignment */
+  text-transform: capitalize !important;
+  font-family: "Metropolis-medium" !important;
+  padding: 15px !important;
+}
+
+.MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background: grey !important;
+  color: white !important;
+}
+
+.MuiTab-root {
+  display: inherit !important;
+  text-align: left;
+  align-items: self-start;
+}
+
+.MuiTab-root.Mui-selected {
+}
+
+.MuiTab-root.Mui-selected::after {
+  content: "";
+  position: absolute;
+  border-left: none;
+  border-right: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 0;
+  margin-top: -10px;
+  top: 50%;
+  left: auto;
+  right: 0;
+  z-index: 1;
+}
+
+.MuiTabs-root {
+  overflow: unset !important;
+  min-height: unset !important;
+}
+
+.MuiTabs-scrollbarSize {
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+}
+
+.MuiTabs-hideScrollbar {
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+}
+
+.MuiTabs-flexContainer {
+  position: sticky;
+  top: 80px;
+}
+
+.tabs-scroller-custom {
+  background: #80808021;
+  background: var(--tertiary-bg);
+  padding-top: 40px;
+  width: 200px;
+  height: 85vh;
+}
+
+.tabs-scroller-custom .Mui-selected {
+  background: var(--text-primary) !important;
+  color: var(--text-white) !important;
+  position: relative;
+  border-right: none !important;
+}
+
+.tabs-scroller-custom .Mui-selected .dash-item {
+  color: white;
+}
+
+.manage-btn {
+  background: grey;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: inset 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.domain-detail-div {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid #80808040;
+}
+
+.domain-details-div {
+  display: flex;
+  gap: 30px;
+}
+
+.domain-detail-div-inner {
+  font-family: "Metropolis-semibold";
+}
+
+.back-btn {
+  background: #101c4c;
+  color: white;
+  font-family: "Metropolis-semibold";
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.domain-div-tabs {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #80808042;
+}
+
+.nameservers-tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.nameserver-tab {
+  width: 49%;
+  margin: 10px 0px;
+  font-family: "Metropolis-regular";
+}
+
+.name-server-input:focus {
+  border: 1px solid #101c4c !important;
+}
+
+.update-btn {
+  background: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: "Metropolis-semibold";
+}
+
+.nameserver-note {
+  font-family: "Metropolis-regular";
+  margin: 15px 0px;
+  font-size: 15px;
+}
+
+.nameserver-note-span {
+  font-family: "Metropolis-semibold";
+}
+
+.registrant-contact {
+  font-family: "Metropolis-regular";
+  margin: 30px 0px 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #80808045;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+.registrant-contact p {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #8080804a;
+  padding-bottom: 10px;
+  padding: 5px 15px;
+  gap: 15px;
+}
+
+.registrant-contact p:last-child {
+  border-bottom: 0px solid grey;
+}
+
+.registrant-contact p span {
+  font-family: "Metropolis-semibold";
+}
+
+.dns-management-tab {
+  font-family: "Metropolis-regular";
+}
+
+.m-sbold {
+  font-family: "Metropolis-semibold";
+}
+.dns-managment-inner-tab {
+  font-family: "Metropolis-regular";
+  border-radius: 6px;
+  margin: auto;
+  padding: 2px 5px;
+}
+
+.dns-mgmt-tabs-list {
+  border-bottom: 0.5px solid #8080802e;
+  width: 100%;
+}
+
+.dns-managment-inner-tab:hover {
+  cursor: pointer;
+}
+
+.add-record-btn {
+  background-color: green !important;
+  color: white !important;
+  padding: 9px 15px;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+.profile-dash-item {
+  font-size: 18px;
+  margin-top: 2px;
+  font-family: "Mukta";
+}
+
+.domain-detail-inner-span {
+  font-family: "Mukta";
+  color: grey;
+}
+
+.domains-view-part {
+  width: 100%;
+}
+
+.view-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 25px;
+  justify-content: end;
+  border-bottom: 1px solid #8080803b;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.view-button {
+  font-size: 24px;
+}
+
+.active-view {
+  padding: 5px;
+  color: var(--text-white);
+  background-color: var(--primary-bg);
+  border-radius: 6px;
+}
+
+.list-part {
+  display: flex;
+  width: 100%;
+  font-family: "Metropolis-regular";
+  align-items: center;
+  padding-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 0px 0px grey;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.list-part:last-child(-1) {
+  border-bottom: 0px solid #80808047;
+}
+
+.list-part:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.list-part:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.list-item-name {
+  width: 40%;
+}
+.list-item-expiry {
+  width: 26%;
+}
+.list-item-btn {
+  width: 17%;
+  text-align: right;
+}
+.list-item-status {
+  width: 17%;
+  text-align: center;
+}
+
+.list-item-status span {
+  background-color: #5cd47e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.add-record-input {
+  border-radius: 8px;
+}
+
+.records-table-dns {
+  border-radius: 8px !important;
+}
+
+.Profile-help-button {
+  border: 1px solid white;
+  box-shadow: 3px 4px black;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--primary-bg);
+  color: white;
+}
+
+.profile-contact-sec {
+  position: relative;
+  z-index: 99;
+  background: var(--tertiary-bg);
+}
+
+.activity-card {
+  box-shadow: 3px 3px 1px var(--text);
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid var(--text);
+}
+
+.bid-domain {
+  background-color: var(--text-primary);
+  color: var(--text-white) !important;
+  padding: 10px 20px;
+}
+
+.bid-domain-content {
+  padding: 10px 20px;
+}
+
+.profile-bid-history-table {
+  margin: 10px 0px;
+  height: 135px;
+  overflow: scroll;
+}
+
+.bidded-history {
+  border: 1px solid #8080805e;
+  align-items: center;
+}
+
+.bidded-history-tags {
+  position: sticky;
+  top: 0px;
+  z-index: 9;
+  background-color: var(--secondary-bg);
+}
+
+.bidded-history:not(:last-child) {
+  border-bottom: 0px solid #8080805e;
+}
+
+/* .bidded-history:last-child {
+  border-bottom: 1px solid #8080805e;
+} */
+
+.tableee {
+  position: sticky;
+  top: 0px;
+}
+
+.bidder-name {
+  width: 35%;
+  font-size: 14px;
+  border-right: 1px solid #8080805e;
+  padding: 0px 5px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  color: var(--text);
+}
+
+.bid-amount {
+  width: 20%;
+  font-size: 14px;
+  border-right: 1px solid #8080805e;
+  padding: 0px 5px;
+  color: var(--text);
+}
+
+.bid-time {
+  width: 45%;
+  font-size: 14px;
+  padding: 0px 5px;
+  color: var(--text);
+}
+
+/* -------------********************************---------------- 
+                  STYLING FOR RESPONSIVE SCREENS 
+--------------- ********************************---------------- */
+/* -------------********************************---------------- 
+                    EXTRA LARGE SCREEN - Min 1910px 
+--------------- ********************************---------------- */
+
+@media only screen and (min-width: 1910px) {
+  .profile-part {
+    width: 30%;
+  }
+
+  .domain-part {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .info-part1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* -------------********************************---------------- 
+                   MOBILE SCREEN - Max - 767px 
+--------------- ********************************---------------- */
+
+@media only screen and (max-width: 767px) {
+  .profile-contact-sec {
+    margin-bottom: 120px;
+  }
+  .profile-contact-sec div {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .profile-page {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .profile-part {
+    width: 90%;
+    order: 1;
+    margin-left: 5%;
+  }
+  .products-part {
+    width: 100%;
+    order: 2;
+  }
+
+  .MuiTabs-scroller {
+    width: 100%;
+  }
+
+  .MuiTabs-scroller {
+    padding-top: 0px;
+  }
+
+  .MuiTab-root {
+    max-width: unset;
+  }
+
+  .tab-content-custom {
+    width: 100%;
+  }
+
+  .info-part::after {
+    left: -40px;
+  }
+
+  .domain-part {
+    width: 95%;
+  }
+
+  .MuiBox-root {
+    padding: 20px 0px !important;
+  }
+
+  .profile-info-part {
+    width: 100%;
+  }
+
+  .domain-name-current {
+    font-size: 30px;
+  }
+
+  .list-part {
+    flex-direction: column;
+  }
+
+  .list-item-name {
+    width: 60%;
+    font-family: "Metropolis-semibold";
+    font-size: 22px;
+  }
+  .list-item-expiry {
+    width: 60%;
+  }
+  .list-item-btn {
+    width: 40%;
+    text-align: right;
+  }
+  .list-item-status {
+    width: 40%;
+    text-align: right;
+  }
+
+  .list-part-mobile {
+    font-family: "Metropolis-regular";
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px 10px;
+  }
+
+  .expiry-date-mobile {
+    font-family: "Metropolis-semibold";
+  }
+
+  .domain-details {
+    padding: 0px !important;
+  }
+
+  .domain-name-current-main {
+    font-size: 32px;
+  }
+
+  .domain-details-div {
+    flex-direction: column;
+  }
+
+  .domain-detail-div {
+    width: 100%;
+  }
+
+  .domain-detail-div-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .domain-detail-div-right {
+    width: 70%;
+  }
+
+  .react-tabs__tab--selected {
+    border: 1px solid grey;
+  }
+
+  .dns-management-tab {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .add-record-input {
+    width: 200px;
+  }
+
+  .registrant-contact {
+    width: 100%;
+  }
+
+  .tabs-scroller-custom {
+    height: fit-content;
+    padding-top: 0px;
+    width: 100%;
+  }
+}

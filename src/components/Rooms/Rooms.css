@@ -1,0 +1,57 @@
+/* rooms Page styling */
+.rooms {
+  position: relative;
+  text-align: center;
+  background: #f8fafe;
+  padding: 30px 40px;
+}
+
+/* the description inside the rooms div */
+.rooms > div > p {
+  width: 100%;
+  /* margin-left: 20%;
+    margin-right: 20%; */
+}
+
+.room-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 120px;
+}
+
+/* room pic effecton hover */
+.room-card img:hover {
+  transform: scale(1.1);
+}
+/* the room type name */
+.roomCard > header {
+  color: #e8a952;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* the room pricings */
+.roomCard > footer {
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: 300;
+}
+
+/* the rooms card picture */
+.room-card img {
+  height: 6cm;
+  width: auto;
+  margin: 10px;
+  box-shadow: 1px 3px 11px #545b61;
+  border-radius: 2%;
+}
+
+@media only screen and (max-width: 767px) {
+  .room-card img {
+    margin: 0px;
+  }
+  .room-card {
+    padding: 0px;
+  }
+}

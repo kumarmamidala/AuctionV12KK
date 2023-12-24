@@ -1,0 +1,37 @@
+.hero-other-part {
+  min-height: 30rem;
+  background-size: cover;
+  min-height: 15rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  background: var(--secondary-bg) !important;
+}
+
+.hero-other-title {
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  font-size: 60px;
+  color: var(--text-primary);
+  margin-top: 60px;
+}
+
+.heading-black {
+  color: black;
+  font-size: 1.45rem;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+  margin: 20px 0px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-other-title {
+    line-height: 60px;
+  }
+}

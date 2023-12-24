@@ -1,0 +1,107 @@
+.content {
+  padding: 0px !important;
+}
+
+.text:hover {
+  color: white !important;
+}
+
+.text {
+  /* margin-left: 20px; */
+  width: 60%;
+}
+
+.discover-box-image {
+  width: 40%;
+}
+
+.discover_btn {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.domain-cards {
+  height: 100%;
+  background: var(--quad-bg) !important;
+  border-top-left-radius: 0px;
+  border-left: 6px solid var(--text-primary);
+}
+
+.domain-cards:hover {
+  background-color: var(--quad-bg) !important;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.domain-cards .domain-card-head {
+  color: var(--text-white);
+  font-family: "Mukta", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.domain-cards .domain-card-para {
+  color: var(--text-white);
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 18px 0px !important;
+}
+
+.domain-cards:hover .domain-card-para {
+  color: var(--text-white) !important;
+}
+
+.domain-cards:hover .domain-card-head {
+  color: var(--text-white) !important;
+}
+
+.domain-cards:hover .discover_btn {
+  color: var(--text) !important;
+}
+
+.discover-part {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+  background-color: var(--white-bg);
+}
+
+@media screen and (min-width: 1910px) {
+  .discover-part {
+    width: 100%;
+    padding: 40px 13rem 40px 15rem;
+  }
+}
+
+.discoverItem {
+  margin: 26px 75px 9px 71px;
+}
+
+@media only screen and (max-width: 767px) {
+  .domain-cards {
+    padding: 20px 15px !important;
+    flex-direction: column;
+  }
+
+  .discover-part {
+    padding: 40px 30px;
+  }
+
+  .discoverItem {
+    margin: 0px;
+  }
+
+  .domain-inner {
+    width: 100%;
+  }
+
+  .discover-box-image {
+    order: 1;
+  }
+  .text {
+    order: 2;
+  }
+}

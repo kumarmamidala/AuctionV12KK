@@ -1,0 +1,647 @@
+/* link hover - circling effect  */
+
+/* --------- Fonts imported ------------- */
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Metropolis:700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600");
+@import url("https://fonts.googleapis.com/css?family=Lato:600");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("./components/Fonts/metropolis.black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-thin";
+  src: url("./components/Fonts/metropolis.thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-regular";
+  src: url("./components/Fonts/metropolis.regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-medium";
+  src: url("./components/Fonts/metropolis.medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-semibold";
+  src: url("./components/Fonts/metropolis.semi-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-bold";
+  src: url("./components/Fonts/metropolis.bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-extralight";
+  src: url("./components/Fonts/metropolis.extra-light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-extrabold";
+  src: url("./components/Fonts/metropolis.extra-bold.otf") format("opentype");
+}
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+/* --------- Gibson Font ------------- */
+
+@font-face {
+  font-family: "Gibson-bold";
+  src: url("./components/Fonts/Gibson/Gibson-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-book";
+  src: url("./components/Fonts/Gibson/Gibson-book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-heavy";
+  src: url("./components/Fonts/Gibson/Gibson-heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-light";
+  src: url("./components/Fonts/Gibson/Gibson-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-medium";
+  src: url("./components/Fonts/Gibson/Gibson-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-regular";
+  src: url("./components/Fonts/Gibson/Gibson-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-semibold";
+  src: url("./components/Fonts/Gibson/Gibson-semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson-thin";
+  src: url("./components/Fonts/Gibson/Gibson-thin.otf") format("opentype");
+}
+
+/* --------- Fonts imported END ------------- */
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+.ads-flowcards-div {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--white-bg);
+  z-index: 2;
+}
+
+.post-a-bid-box {
+  box-shadow: 0px 0px 4px grey;
+  padding: 40px !important;
+  margin-top: 40px;
+}
+
+.section-center {
+  background: var(--tertiary-bg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px 80px;
+  padding-top: 100px;
+}
+
+.checkout-part {
+  background-image: url(./components/Hero/media/Two4.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.checkout-pages {
+  padding-top: 100px;
+}
+
+.t-padding {
+  padding: 0px 60px;
+}
+
+@media only screen and (min-width: 1910px) {
+  .section-center {
+    padding-top: 100px;
+    padding-bottom: 40px !important;
+  }
+
+  .t-padding {
+    padding: 0px 18rem;
+  }
+}
+
+.circle-effect-link {
+  --text: #2b3044;
+  --line: #76d2cb;
+  --line-active: #18b0a4;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  transition: margin 0.25s;
+  margin-bottom: 20px;
+}
+
+.circle-effect-link .circle-effect-svg {
+  width: 18rem;
+  height: 38px;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transform: translate(-66%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: var(--offset, 59px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+.circle-effect-link .circle-effect-svg-help {
+  width: 18rem;
+  height: 38px;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transform: translate(-42%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: var(--offset, 59px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+.circle-effect-link .circle-effect-svg-appraisal {
+  width: 18rem;
+  height: 38px;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  transform: translate(-42%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke-dasharray: var(--offset, 59px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+.circle-effect-link:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 180px;
+}
+
+/* hover link circle ended */
+
+body {
+  background-color: #ffffff;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.input-section {
+  font-family: "Open Sans";
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 100%;
+  background: var(--secondary-bg);
+}
+
+.Stack-box {
+  background-color: transparent;
+}
+
+.input-section:focus {
+  outline: 0px solid;
+  border: 1px solid black !important;
+}
+.login-box {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 40px 50px;
+  border-radius: 8px;
+  background: #839be5;
+  background: var(--white-bg);
+  box-shadow: 0px 0px 2px 1px var(--secondary-bg);
+  border-bottom: 1px solid #fff;
+  border-bottom-right-radius: 15px;
+  border-left: 1px solid #fff;
+}
+
+.login-page-form {
+  margin: 0px;
+}
+
+.login-title {
+  width: 400px;
+}
+
+.login-heading {
+  text-align: left !important;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none !important;
+  font-size: 20px;
+  margin-bottom: 22px;
+  color: #fbcb04;
+  font-weight: 500;
+  font-weight: 600 !important;
+  font-size: 25px !important;
+  text-decoration: none !important;
+  margin-top: 4px;
+}
+
+.label-text {
+  margin-bottom: 10px;
+}
+
+.login-link:hover {
+  color: #fbcb04;
+  text-decoration: underline;
+}
+
+.signup-input {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  background-color: var(--secondary-bg) !important;
+  border: 0px solid #00000070 !important;
+  padding: 6px 16px;
+  width: 100%;
+  color: var(--text) !important;
+}
+
+.signup-input:focus {
+  border: 1px solid #00000070 !important;
+  outline: 0px;
+}
+
+.title {
+  font-family: "Mukta", sans-serif;
+  font-size: 45px !important;
+  font-weight: bold;
+  color: var(--text-primary);
+  text-align: center;
+  font-weight: 800;
+}
+
+.title-white {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 35px !important;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  text-align: left;
+}
+
+.title-gold {
+  font-family: "Mukta", sans-serif;
+  font-size: 35px !important;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: var(--text) !important;
+  text-align: left;
+}
+
+.title1 {
+  font-family: "Mukta", sans-serif;
+  font-size: 35px !important;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  text-align: center;
+  margin-left: 60px !important;
+}
+
+.title-black {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 35px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text) !important;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.title-sub {
+  font-family: "Mukta", sans-serif;
+  font-size: 26px;
+  line-height: 35px;
+  margin-left: 35px;
+  text-transform: none;
+  padding: 5px;
+  font-style: normal;
+  color: white;
+}
+
+.home-subtitle {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 150%;
+  text-align: center;
+  margin: 20px 0px 40px;
+  color: var(--text);
+}
+
+.heading {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: var(--text);
+  font-weight: 800 !important;
+}
+
+.heading::selection {
+  background-color: #25cbd3;
+  color: white;
+}
+
+.heading-gold {
+  font-family: "Mukta", sans-serif;
+  font-size: 25px !important;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: var(--primary-bg) !important;
+}
+
+.heading-sub {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px !important;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: white;
+}
+
+.heading-sub1 {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px !important;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: var(--text);
+}
+
+.heading-small {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 28 px !important;
+  color: var(--text);
+}
+
+.heading-sub::selection {
+  background-color: #25cbd3;
+  color: white;
+}
+
+.heading-white {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 25px !important;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.footer-heading {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 25px !important;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: var(--text) !important;
+}
+
+.heading-left-border-gold {
+  border-left: 12px solid var(--primary-bg);
+  line-height: 40px;
+  margin-bottom: 16px;
+  margin-top: 48px;
+  padding-left: 12px;
+  color: var(--text);
+}
+
+.login-signup-input {
+  background: transparent;
+  font-family: "Mukta", sans-serif;
+  border: 1px solid var(--text-primary) !important;
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 100%;
+  margin-top: 10px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.login-signup-input:focus {
+  outline: 0px solid;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+  .event-right-heading {
+    padding-top: 40px !important;
+  }
+
+  .home-subtitle {
+    margin: 20px 0px 30px;
+  }
+
+  .t-padding {
+    padding: 0px 20px;
+  }
+}
+
+.paragraph {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: var(--text);
+  line-height: 150%;
+}
+
+.paragraph-gold {
+  font-family: "Open Sans" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #fbcb04 !important;
+}
+
+.paragraph-sub {
+  font-family: "Open Sans" !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: var(--text) !important;
+  line-height: 20px;
+}
+
+.paragraph::selection {
+  background-color: var(--primary-bg);
+  color: white;
+}
+
+.paragraph-white {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: var(--text-white) !important;
+}
+
+.footer-wrapper {
+  bottom: 0px;
+  z-index: 1;
+}
+
+.custom-btn {
+  /* width: 130px; */
+  height: 40px;
+  color: var(--text) !important;
+  border-radius: 5px;
+  padding: 7px 16px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); */
+  outline: none;
+}
+
+.main-button {
+  background: var(--primary-btn) !important;
+  border: none;
+  z-index: 1;
+  color: var(--text-white) !important;
+  font-family: "Mukta", sans-serif;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.main-button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--white-bg);
+  border-radius: 5px;
+  /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 4px var(--text-primary);
+  border-radius: 30px;
+  color: var(--text-primary) !important;
+}
+.main-button:hover {
+  color: var(--text-primary) !important;
+}
+.main-button:hover:after {
+  left: 0;
+  width: 100%;
+}
+.main-button:active {
+  top: 2px;
+}
+
+.footer-bg {
+  /* background-image: url(./components/Hero/media/Two.png); */
+}
+
+.post-a-bid-part {
+  background: linear-gradient(
+    180deg,
+    #030a2e 0%,
+    rgba(255, 255, 255, 1) 7%,
+    rgba(255, 255, 255, 1) 10%
+  );
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+
+.close {
+  content: "x" !important;
+  font-size: 22px;
+  padding: 5px 6px;
+  background: var(--primary-bg);
+  line-height: 17px;
+  border-radius: 6px;
+  color: white;
+  color: white !important;
+  margin-top: 6px;
+  z-index: 9;
+}
+
+.hero-profile {
+  z-index: 2;
+  position: relative;
+  background: white;
+}
+
+.heading-post {
+  font-family: "Mukta", sans-serif !important;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold !important;
+  color: var(--text);
+  font-weight: 200 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 32px !important;
+    text-align: center;
+  }
+  .title1 {
+    font-size: 28px !important;
+    margin: 0 auto !important;
+    align-items: center;
+    text-align: center;
+  }
+  .heading {
+    font-size: 25px !important;
+  }
+  .heading-white {
+    line-height: 35px;
+  }
+  .post-a-bid-part {
+    margin-bottom: -100px;
+  }
+
+  .footer-wrapper {
+    position: unset;
+  }
+
+  .login-title {
+    width: fit-content;
+    flex-direction: column !important;
+  }
+
+  .login-box {
+    padding: 40px 20px 40px;
+  }
+}

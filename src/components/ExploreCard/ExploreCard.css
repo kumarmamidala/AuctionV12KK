@@ -1,0 +1,41 @@
+.explore-section {
+  padding: 9rem 7rem 3rem 7rem;
+  background: var(--secondary-bg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+  position: relative;
+}
+
+.explore-ul {
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 1910px) {
+  .explore-section {
+    width: 100%;
+    padding: 40px 16rem 0rem 19rem;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .explore-section {
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 100px 20px;
+    text-align: left !important;
+    padding-bottom: 0px;
+  }
+  .explore-image {
+    order: 1;
+  }
+  .explore-content {
+    order: 2;
+  }
+}

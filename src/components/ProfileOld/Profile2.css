@@ -1,0 +1,150 @@
+/* .basic-info {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-part {
+  width: 20%;
+}
+
+.info-part {
+  width: 70%;
+}
+
+.person-image {
+  width: 120px;
+  height: 120px;
+}
+
+.user-product-image {
+  height: 180px;
+  width: 300px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+.title1 {
+  text-align: left;
+}
+
+.profile-hr {
+  width: 100%;
+}
+
+
+.profile-page {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 80px;
+}
+
+.products-part {
+  width: 60%;
+}
+
+.profile-inner-part {
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px #02355a;
+  margin-bottom: 40px;
+}
+
+.personal-info-heading {
+  background: #665fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.profile-part {
+  width: 27%;
+  margin-left: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.title-sub {
+  margin-left: 0px;
+}
+
+.basic-info1 {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f1eff7;
+}
+
+.basic-info {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-part {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info-part1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-part {
+  width: 100%;
+}
+
+.person-image {
+  width: 120px;
+  height: 120px;
+}
+
+.user-product-image {
+  height: 180px;
+  width: 300px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+@media only screen and (min-width: 1910px) {
+  .profile-part {
+    width: 30%;
+  }
+
+  .profile-page {
+    padding: 0px 16rem 0px 14rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .info-part1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-page {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .profile-part {
+    width: 90%;
+    order: 1;
+    margin-left: 5%;
+  }
+  .products-part {
+    width: 100%;
+    order: 2;
+    padding: 40px 20px;
+  }
+} */

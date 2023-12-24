@@ -1,0 +1,95 @@
+.serviceContainer {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 25px;
+  background: #f8fafe;
+}
+
+.serviceContainer h3 {
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.service-center p,
+.service-center span {
+  text-align: center;
+}
+
+.service-center {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 30px;
+}
+
+.serviceer {
+  text-align: center;
+  border-radius: 10px;
+  border: 2.5px solid var(--white-color);
+  box-shadow: 0px 0px 10px #3373a0;
+  padding: 20px 10px;
+}
+
+.serviceer:hover {
+  /* box-shadow: 0px 0px 8px #fbcb04; */
+  transform: scale(1.03) !important;
+  transition: 2ms;
+}
+
+.title-service,
+.service-center {
+  padding: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .serviceer {
+    width: 100%;
+  }
+  .service-center {
+    padding: 30px 10px;
+  }
+}
+
+.service-center span {
+  display: inline-block;
+  color: #fbcb04;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.service-center h4 {
+  letter-spacing: var(--mainSpacing);
+}
+.service-center p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .service-center {
+    width: 95vw;
+  }
+}
+@media screen and (min-width: 1910px) {
+  .service-center {
+    width: 65vw;
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service-center {
+    display: grid;
+    margin: 0 auto;
+    max-width: 90vw;
+
+    gap: 30px;
+  }
+}
