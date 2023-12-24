@@ -9,6 +9,10 @@ function FancyCards() {
         <span className="text-primary">Exclusive services </span>
         for domain sellers
       </h1>
+      <p className="paragraph text-center mt-[15px] mb-[20px]">
+        Use our exclusive services in the market and get profited from it at the
+        earliest
+      </p>
       <section className="card-container">
         <article className="card-container__card">
           <div className="card-container__card__content">

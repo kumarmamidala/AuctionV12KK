@@ -7,7 +7,8 @@ const Questions = ({ data }) => {
     subHeading: "Faq",
     headingOne: "Frequently Asked",
     headingTwo: "Questions",
-    // describe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+    describe:
+      "Explore .gold auctions—secure domains, bidding tips, payment options, and more",
   };
   return (
     <div class="faq-section">
@@ -16,7 +17,7 @@ const Questions = ({ data }) => {
       </Fade>
       <Fade bottom>
         <div className="w-11/12 mx-auto mb-10 md:!ml-20">
-          <div className="grid   lg:gap-4">
+          <div className="grid lg:gap-4">
             {data.map((item) => {
               return (
                 <div>
