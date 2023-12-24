@@ -8,6 +8,9 @@
   padding: 0px 84px 41px 82px;
   z-index: 2;
   position: relative;
+  padding-top: 220px;
+  margin-top: -220px;
+  z-index: 0;
 }
 
 .btn-custom {

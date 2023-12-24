@@ -16,13 +16,13 @@ const WelcomeBanner = ({ data }) => {
               </div>
               <div className="col-md-6 d-flex align-items-center pb-5 welcome-banner-content md:pl-20">
                 <div className="text-black">
-                  <small className=" title ">{item.heading}</small>
+                  <small className=" title !text-white">{item.heading}</small>
                   <br />
-                  <h1 className=" heading !normal-case text-left">
+                  <h1 className=" heading !normal-case text-left !text-white">
                     {item.subheading}
                   </h1>
                   <div className="w-service my-4">
-                    <p class="paragraph ">
+                    <p class="paragraph !text-white">
                       {/* <i class="fa-solid fa-angles-right me-2"></i> */}
                       <span>
                         {" "}
@@ -33,7 +33,7 @@ const WelcomeBanner = ({ data }) => {
                       </span>
                       {item.t1}
                     </p>
-                    <p class="paragraph">
+                    <p class="paragraph !text-white">
                       {/* <i class="fa-solid fa-angles-right me-2"></i>  */}
                       <span>
                         {" "}
@@ -44,7 +44,7 @@ const WelcomeBanner = ({ data }) => {
                       </span>
                       {item.t2}
                     </p>
-                    <p class="paragraph">
+                    <p class="paragraph !text-white">
                       {/* <i class="fa-solid fa-angles-right me-2"></i> */}
                       <span>
                         {" "}
@@ -55,7 +55,7 @@ const WelcomeBanner = ({ data }) => {
                       </span>
                       {item.t3}
                     </p>
-                    <p class="paragraph">
+                    <p class="paragraph !text-white">
                       {/* <i class="fa-solid fa-angles-right me-2"></i>  */}
                       <span>
                         {" "}
