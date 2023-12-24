@@ -32,10 +32,10 @@ const Footerr = () => {
   return (
     <>
       {" "}
-      <div className="py-8 footer-box">
-        <div className="upper grid grid-cols-1  lg:grid-cols-2 gap-4 items-center pb-10 border-b">
+      <div className=" footer-box">
+        <div className="upper  items-center  border-b footer-part-one">
           <div className="">
-            <h2 className="font-semibold text-2xl heading mb-2 text-white ">
+            <h2 className="font-semibold text-2xl heading mb-[20px] text-white ">
               Embrace digital transformation with .gold!
             </h2>
             <p className="text-[#323232a1] paragraph-white text-[15px] !text-white">
@@ -43,10 +43,10 @@ const Footerr = () => {
               thrill of winning an auction at great prices.
             </p>
           </div>
-          <div className=" border-none lg:border-l-2 border-gray-200 pl-0 lg:pl-52 ">
+          <div className="  ">
             <form
               onSubmit={handleSubmit}
-              className="space-x-4 space-y-4 flex place-items-baseline"
+              className="flex flex-row subscribe-form"
               action="#"
             >
               <input
@@ -54,18 +54,18 @@ const Footerr = () => {
                 onChange={(e) => setInput(e.target.value)}
                 value={input}
                 type="email"
-                className="bg-white focus:outline-none focus:ring-2  shadow-2xl rounded subscribe-input"
+                className="subscribe-input"
                 placeholder="EMAIL"
               />
 
               <button type="submit" className="subscribe-btn">
                 Subscribe
-                <BiRightArrow className="text-white mt-[2px]" />
+                <BiRightArrow className="text-white mt-[2px] subscribe-icon" />
               </button>
             </form>
           </div>
         </div>
-        <div className="row mt-[40px]">
+        <div className="row footer-part-two">
           <div className="col-md-4">
             <div>
               <img src={logo} alt="" className="footer-logo" />
@@ -153,68 +153,75 @@ const Footerr = () => {
                 />
               </li>
             </ul>
-            <div className="flex gap-[30px] mt-3">
-              <a
-                href="https://www.facebook.com/Terces1555"
-                className="bg-white p-[6px] rounded-[15px] t-footer-icon"
-                id="mission-div"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebookF className="text-[#002549] fb " />
-              </a>
-              <ReactTooltip
-                anchorId="mission-div"
-                place="top"
-                content="Like Us"
-                className="copy-box-home-vision"
-              />
-              <a
-                href="https://www.youtube.com/@TercesSolutionsPrivatelimited/channels"
-                className="bg-white p-[6px] rounded-[15px] t-footer-icon"
-                id="mission-div1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaYoutube className="text-[#002549] yt" />
-              </a>
-              <ReactTooltip
-                anchorId="mission-div1"
-                place="top"
-                content="Subscribe Us"
-                className="copy-box-home-vision"
-              />
-              <a
-                href="https://www.instagram.com/terces_solutions/"
-                className="bg-white p-[6px] rounded-[15px]  t-footer-icon"
-                id="mission-div2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <RiInstagramFill className="text-[#002549] insta" />
-              </a>
-              <ReactTooltip
-                anchorId="mission-div2"
-                place="top"
-                content="Follow Us"
-                className="copy-box-home-vision"
-              />
-              <a
-                href="https://twitter.com/terceS_sol"
-                className="bg-white p-[6px] rounded-[15px] t-footer-icon"
-                id="mission-div3"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter className="text-[#002549] twitter" />
-              </a>
-              <ReactTooltip
-                anchorId="mission-div3"
-                place="top"
-                content="Follow Us"
-                className="copy-box-home-vision"
-              />
-            </div>
+          </div>
+        </div>
+        <div className="footer-part-three">
+          <div className="flex gap-[10px] terms-part-footer">
+            <Link>Privacy</Link>
+            <Link>Terms</Link>
+            <Link>Cookie Preferences</Link>
+          </div>
+          <div className="flex gap-[30px]">
+            <a
+              href="https://www.facebook.com/Terces1555"
+              className="bg-white p-[6px] rounded-[15px] t-footer-icon"
+              id="mission-div"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="text-[#002549] fb " />
+            </a>
+            <ReactTooltip
+              anchorId="mission-div"
+              place="top"
+              content="Like Us"
+              className="copy-box-home-vision"
+            />
+            <a
+              href="https://www.youtube.com/@TercesSolutionsPrivatelimited/channels"
+              className="bg-white p-[6px] rounded-[15px] t-footer-icon"
+              id="mission-div1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="text-[#002549] yt" />
+            </a>
+            <ReactTooltip
+              anchorId="mission-div1"
+              place="top"
+              content="Subscribe Us"
+              className="copy-box-home-vision"
+            />
+            <a
+              href="https://www.instagram.com/terces_solutions/"
+              className="bg-white p-[6px] rounded-[15px]  t-footer-icon"
+              id="mission-div2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <RiInstagramFill className="text-[#002549] insta" />
+            </a>
+            <ReactTooltip
+              anchorId="mission-div2"
+              place="top"
+              content="Follow Us"
+              className="copy-box-home-vision"
+            />
+            <a
+              href="https://twitter.com/terceS_sol"
+              className="bg-white p-[6px] rounded-[15px] t-footer-icon"
+              id="mission-div3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="text-[#002549] twitter" />
+            </a>
+            <ReactTooltip
+              anchorId="mission-div3"
+              place="top"
+              content="Follow Us"
+              className="copy-box-home-vision"
+            />
           </div>
         </div>
       </div>

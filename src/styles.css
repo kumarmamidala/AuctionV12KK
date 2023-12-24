@@ -536,7 +536,7 @@ body {
   z-index: 1;
   color: var(--text-white) !important;
   font-family: "Mukta", sans-serif;
-  border-radius: 30px;
+  border-radius: 8px;
   font-size: 18px;
 }
 .main-button:after {
@@ -553,7 +553,7 @@ body {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
   box-shadow: 0px 0px 4px var(--text-primary);
-  border-radius: 30px;
+  border-radius: 8px;
   color: var(--text-primary) !important;
 }
 .main-button:hover {

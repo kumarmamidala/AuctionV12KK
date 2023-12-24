@@ -39,6 +39,26 @@ body {
   color: var(--text);
 }
 
+.Topbarmain.black .Nav-linkk:hover {
+  color: var(--text-pent);
+}
+
+.Nav-linkk {
+  color: var(--text);
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: bold;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 100ms ease-in-out;
+}
+
+.Nav-linkk:hover {
+  color: var(--text-pent) !important;
+  border-bottom: 2px solid var(--text-pent);
+}
+
 .Topbarmain.black .paragraph {
   color: #25cbd3 !important;
 }
@@ -52,8 +72,8 @@ body {
 .white-btn {
   background-color: var(--white-bg);
   color: var(--text);
-  padding: 10px 20px 10px 5px;
-  border-radius: 30px;
+  padding: 5px 20px 5px 5px;
+  border-radius: 8px;
   font-family: "Mukta", sans-serif;
   font-size: 22px;
   font-weight: 800;
@@ -84,15 +104,6 @@ body {
   }
 }
 .headtwo {
-}
-.Nav-linkk {
-  color: var(--text);
-  display: flex;
-  flex-wrap: nowrap;
-  font-weight: bold;
-  font-family: "Mukta", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 .Nav-linkk123 {
@@ -290,12 +301,18 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   color: var(--text) !important;
-  padding: 1px 20px;
-  border-radius: 30px;
+  padding: 0px 20px;
+  border-radius: 8px;
   font-family: "Mukta", sans-serif;
   font-size: 16px;
   border: 2px solid transparent;
   transition: 300ms ease-in-out;
+}
+
+.login-btn-1:hover {
+  color: var(--text-pent);
+  background-color: white;
+  border: 2px solid var(--text-quad);
 }
 
 .dropdown-content1 a:hover .drop-item-span {

@@ -385,6 +385,7 @@ hr {
 @media (max-width: 767px) {
   .why-gold {
     padding: 0px;
+    margin-left: 0px;
   }
 
   .processContainer h1 {
