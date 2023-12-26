@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import logo from "../media/new-logo.png";
+import logo from "../media/Newv12.png";
 import { Link } from "react-router-dom";
 
 import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";

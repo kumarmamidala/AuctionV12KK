@@ -3,7 +3,7 @@ import React, { useState, Fragment, useContext, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import { Link, useNavigate } from "react-router-dom";
 import "./main.css";
-import logo from "./media/new-logo.png";
+import logo from "./media/Newv12.png";
 
 import { BsPersonFill } from "react-icons/bs";
 import { AuthContext } from "../Context/AuthContextProvider";
@@ -46,7 +46,7 @@ function TopBar() {
       <div className="flex flex-col p-10 py-0 max-w-8xl mx-auto space-y-4 Topbarmain pb-8">
         <div className="flex items-center sm:py-2 topbar-small">
           <Link to="/" className="Nav-linkk123">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className="topbar-logo" />
           </Link>
 
           <div className="flex w-full justify-end relative left-[-10px]">
