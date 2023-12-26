@@ -35,7 +35,7 @@ const Footerr = () => {
       <div className=" footer-box">
         <div className="upper  items-center  border-b footer-part-one">
           <div className="">
-            <h2 className="font-semibold text-2xl heading mb-[20px] text-white ">
+            <h2 className="font-semibold text-2xl title mb-[20px] text-white ">
               Embrace digital transformation with .gold!
             </h2>
             <p className="text-[#323232a1] paragraph-white text-[15px] !text-white">
@@ -66,7 +66,7 @@ const Footerr = () => {
           </div>
         </div>
         <div className="row footer-part-two">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div>
               <img src={logo} alt="" className="footer-logo" />
             </div>
@@ -75,8 +75,8 @@ const Footerr = () => {
               operations and driving success in a fast-evolving tech landscape.
             </p>
           </div>
-          <div class="col-md-3">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Open_sans']">
+          <div class="col-md-2 ml-[5%]">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
               Quick Links
             </h2>
             <ul className="text-white font-[Inter] flex flex-col">
@@ -96,8 +96,8 @@ const Footerr = () => {
               </Link>
             </ul>
           </div>
-          <div class="col-md-2">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Open_sans']">
+          <div class="col-md-2 ml-[3%] mr-[2%]">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
               Connect
             </h2>
             <ul className="text-white flex flex-col">
@@ -115,10 +115,10 @@ const Footerr = () => {
             </ul>
           </div>
           <div className="col-md-3">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Open_sans']">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
               Address
             </h2>
-            <ul className="text-white font-['Open_Sans'] text-[15px] text-[#ffffffdb] leading-[28px]">
+            <ul className="text-white font-['Mukta'] text-[18px] text-[#ffffffdb] leading-[28px]">
               <li className="">
                 2-5- 538/D, 4th Floor, <br />
                 Dr. KSR Sastry Business Park, <br />
@@ -129,7 +129,7 @@ const Footerr = () => {
                   <span className="inline-block">
                     <img src={hand} alt="" className="blog-hand1" />
                   </span>
-                  +91 9581430505
+                  <span className="footer-link123">+91 9581430505</span>
                 </a>
                 <ReactTooltip
                   anchorId="call"
@@ -143,7 +143,7 @@ const Footerr = () => {
                   <span className="inline-block">
                     <img src={hand} alt="" className="blog-hand1" />
                   </span>
-                  info@terces.io{" "}
+                  <span className="footer-link123">info@terces.io </span>
                 </a>
                 <ReactTooltip
                   anchorId="mail"
@@ -157,9 +157,9 @@ const Footerr = () => {
         </div>
         <div className="footer-part-three">
           <div className="flex gap-[10px] terms-part-footer">
-            <Link>Privacy</Link>
-            <Link>Terms</Link>
-            <Link>Cookie Preferences</Link>
+            <Link className="footer-link123">Privacy</Link>
+            <Link className="footer-link123">Terms</Link>
+            <Link className="footer-link123">Cookie Preferences</Link>
           </div>
           <div className="flex gap-[30px]">
             <a

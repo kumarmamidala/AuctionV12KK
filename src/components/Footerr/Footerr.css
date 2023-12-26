@@ -117,9 +117,12 @@
 .footer_links {
   font-size: 18px;
   line-height: 44px;
-  font-family: "Open Sans";
+  font-family: "Mukta";
 }
 
+.footer_links:hover {
+  color: var(--text-primary);
+}
 .text-underline {
   position: relative;
   display: inline-block;
@@ -129,7 +132,7 @@
 .text-underline:after {
   content: "";
   position: absolute;
-  border-bottom: 2px solid #fff5e9;
+  border-bottom: 2px solid var(--text-primary);
   top: 85%;
   transition: all 0.4s;
   right: 100%;
@@ -138,6 +141,14 @@
 
 .timeline-item-content:hover .text-underline:after {
   right: 0;
+}
+
+.timeline-item-content:hover {
+  color: var(--text-primary);
+}
+
+.footer-link123:hover {
+  color: var(--text-primary);
 }
 
 .copy-box-home-vision {

@@ -33,7 +33,7 @@ function Main() {
         <section className="processContainer" id="processContainer">
           <Fade bottom>
             <h1 className="  title ">
-              Why <span class="text-quad"> .Gold Domain</span> extension ?
+              Why <span class="text-pent"> .Gold Domain</span> extension ?
             </h1>
             <p className="home-subtitle">
               .Gold domains signify prestige, enhancing trust, and uniqueness in

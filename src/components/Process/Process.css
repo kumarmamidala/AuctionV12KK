@@ -169,7 +169,7 @@ hr {
   flex-direction: column-reverse;
 }
 .processAnimation h3 {
-  color: var(--text-quad);
+  color: var(--text-primary);
   /* text-decoration: underline; */
   position: absolute;
   font-size: 22px !important;
