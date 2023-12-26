@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import img1 from "./media/herobid2.png";
+import img1 from "./media/Auction-amico.png";
 import clock from "./media/bid-clock.gif";
 
 function Hero() {
