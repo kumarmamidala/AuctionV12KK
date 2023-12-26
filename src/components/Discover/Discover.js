@@ -1,8 +1,8 @@
 import Aos from "aos";
 import React from "react";
-import dis1 from "./media/Post Domain.png";
-import dis2 from "./media/Get Help.png";
-import dis3 from "./media/Know It.png";
+import dis1 from "./media/Posts-rafiki.png";
+import dis2 from "./media/Helping a partner-rafiki.png";
+import dis3 from "./media/Bibliophile-cuate.png";
 import "./Discovers.css";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";

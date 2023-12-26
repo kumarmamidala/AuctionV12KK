@@ -3,7 +3,7 @@ import "./Experience.css";
 import Experience from "./Experience";
 import Card from "./Card";
 import { Link } from "react-router-dom";
-import buyer from "./../FlowCards/Media/1.png";
+import buyer from "./Media/bidmain.png";
 import Sellers_img from "./../FlowCards/Media/2.png";
 
 import PropTypes from "prop-types";

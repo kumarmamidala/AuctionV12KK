@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./FlowCards.css";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import offers from "./Media/offers.png";
-import win from "./Media/output-onlinegiftools (5).gif";
-import utilize from "./Media/Utilize.png";
+import offers from "./Media/Job offers-rafiki.png";
+import win from "./Media/winit.png";
+import utilize from "./Media/Website Creator-amico.png";
 import Fade from "react-reveal/Fade";
 import Shapes from "../Shapes/Shapes";
 
