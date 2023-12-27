@@ -125,7 +125,8 @@ const Product = ({
         </Fade>
       ) : (
         <Fade bottom>
-          <div className="flex p-3 border border-gray-300 rounded-lg shadow-md transition-all auction-price-card">
+          <div></div>
+          <div className="flex p-3 border border-gray-300 rounded-lg shadow-md transition-all auction-price-card1">
             {/* DESCRIPTION */}
             <div className="auction-product-left">
               <Fade left delay={250}>
@@ -136,12 +137,12 @@ const Product = ({
                   >
                     {Name}
                   </Link>
-                  <Link
+                  {/* <Link
                     to={`/Marketplace/${ID}`}
                     className=" pt-1 -mb-2 text-pent"
                   >
                     Know more
-                  </Link>
+                  </Link> */}
                 </div>
               </Fade>
               <Fade left delay={500}>
@@ -160,16 +161,16 @@ const Product = ({
               </Fade>
               <Fade left delay={1000}>
                 <div className="last-date-div time-left">
-                  <span>
+                  {/* <span>
                     <img
                       src={loader_timer}
                       alt=""
                       className="inline !w-[60px] !h-[50px] mr-[0px] ml-[5px]"
                     />
-                  </span>
+                  </span> */}
 
                   <div className="flex flex-col ">
-                    <span className="font-bold">Time Left &nbsp; </span>
+                    {/* <span className="font-bold">Time Left &nbsp; </span> */}
                     <span className="font-bold text-pent text-[16px]">
                       {" "}
                       {timeRemaining.days}d {timeRemaining.hours}h{" "}

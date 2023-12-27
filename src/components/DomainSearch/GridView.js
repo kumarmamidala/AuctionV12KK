@@ -21,7 +21,7 @@ const Wrapper = styled.section`
 
   .products-container {
     display: flex;
-    gap: 10px;
+
     flex-direction: column;
     flex-wrap: wrap;
   }

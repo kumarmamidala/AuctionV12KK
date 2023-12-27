@@ -91,6 +91,16 @@
   border-left: 6px solid black !important;
 }
 
+.auction-price-card1 {
+  background-color: var(--white-bg);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
 .bid1-input:focus {
   outline: 0px;
 }
