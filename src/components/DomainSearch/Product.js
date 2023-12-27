@@ -129,99 +129,75 @@ const Product = ({
           <div className="flex p-3 border border-gray-300 rounded-lg shadow-md transition-all auction-price-card1">
             {/* DESCRIPTION */}
             <div className="auction-product-left">
-              <Fade left delay={250}>
-                <div className="flex items-left text-left justify-between mb-2 flex-col name-div">
-                  <Link
-                    to={`/Marketplace/${ID}`}
-                    className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis heading"
-                  >
-                    {Name}
-                  </Link>
-                  {/* <Link
+              <div className="flex items-left text-left justify-between  flex-col name-div">
+                <Link
+                  to={`/Marketplace/${ID}`}
+                  className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis heading"
+                >
+                  {Name}
+                </Link>
+                {/* <Link
                     to={`/Marketplace/${ID}`}
                     className=" pt-1 -mb-2 text-pent"
                   >
                     Know more
                   </Link> */}
-                </div>
-              </Fade>
-              <Fade left delay={500}>
-                <div className="premium-div">
-                  <p>PREMIUM</p>
-                </div>
-              </Fade>
-              <Fade left delay={750}>
-                <div className="bid-div">
-                  Total Bids:&nbsp;{" "}
-                  <span className="font-bold text-pent">
-                    {" "}
-                    {Number_of_bidders}
-                  </span>
-                </div>
-              </Fade>
-              <Fade left delay={1000}>
-                <div className="last-date-div time-left">
-                  {/* <span>
-                    <img
-                      src={loader_timer}
-                      alt=""
-                      className="inline !w-[60px] !h-[50px] mr-[0px] ml-[5px]"
-                    />
-                  </span> */}
-
-                  <div className="flex flex-col ">
-                    {/* <span className="font-bold">Time Left &nbsp; </span> */}
-                    <span className="font-bold text-pent text-[16px]">
-                      {" "}
-                      {timeRemaining.days}d {timeRemaining.hours}h{" "}
-                      {timeRemaining.minutes}m {timeRemaining.seconds}s
-                    </span>
-                  </div>
-                </div>
-              </Fade>
-            </div>
-            <Fade left delay={1250}>
-              <div className="auction-product-right flex align-items-center">
-                <Link
-                  to={`/Marketplace/${ID}`}
-                  className="p-2 px-3 text-[24px] leading-3 font-bold  scale-90 font-['Mukta'] hover:text-black"
-                >
-                  Rs. {Price}
-                </Link>
-                <Popup
-                  trigger={
-                    <button className="custom-btn main-button">
-                      Place a bid.
-                    </button>
-                  }
-                  modal
-                >
-                  {(close) => (
-                    <div>
-                      {" "}
-                      <div class="flex justify-end ">
-                        {" "}
-                        <a
-                          className="close text-right text-4xl absolute mr-[10px] pt-[1px] cursor-pointer !text-black close-btn "
-                          onClick={close}
-                        >
-                          X
-                        </a>
-                      </div>
-                      <PopUpItem
-                        name={Name}
-                        status={status}
-                        ID={ID}
-                        price={Price}
-                        amount={Highest_bid_amount}
-                        bidders={Number_of_bidders}
-                        Deadline={Deadline}
-                      />
-                    </div>
-                  )}
-                </Popup>{" "}
               </div>
-            </Fade>
+              <div className="premium-div">
+                <p>PREMIUM</p>
+              </div>
+              <div className="bid-div">
+                <span className="font-bold text-pent">
+                  {" "}
+                  {Number_of_bidders}
+                </span>
+              </div>
+              <div className="last-date-div time-left">
+                <span className="font-bold text-pent text-[16px]">
+                  {" "}
+                  {timeRemaining.days}d {timeRemaining.hours}h{" "}
+                  {timeRemaining.minutes}m {timeRemaining.seconds}s
+                </span>
+              </div>
+              <Link
+                to={`/Marketplace/${ID}`}
+                className="p-2 px-3 text-[24px] leading-3 font-bold  scale-90 font-['Mukta'] hover:text-black price-div"
+              >
+                Rs. {Price}
+              </Link>
+              <Popup
+                trigger={
+                  <button className="custom-btn main-button place-a-bid-div">
+                    Place a bid.
+                  </button>
+                }
+                modal
+              >
+                {(close) => (
+                  <div>
+                    {" "}
+                    <div class="flex justify-end ">
+                      {" "}
+                      <a
+                        className="close text-right text-4xl absolute mr-[10px] pt-[1px] cursor-pointer !text-black close-btn "
+                        onClick={close}
+                      >
+                        X
+                      </a>
+                    </div>
+                    <PopUpItem
+                      name={Name}
+                      status={status}
+                      ID={ID}
+                      price={Price}
+                      amount={Highest_bid_amount}
+                      bidders={Number_of_bidders}
+                      Deadline={Deadline}
+                    />
+                  </div>
+                )}
+              </Popup>{" "}
+            </div>
           </div>
         </Fade>
       )}

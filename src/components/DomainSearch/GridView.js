@@ -21,9 +21,7 @@ const Wrapper = styled.section`
 
   .products-container {
     display: flex;
-
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   @media (max-width: 77px) {

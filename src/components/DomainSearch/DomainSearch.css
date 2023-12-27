@@ -99,6 +99,13 @@
   overflow: hidden;
   border-radius: 0px;
   border-top-left-radius: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.products-container:last-child article .auction-price-card1 {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .bid1-input:focus {
@@ -213,7 +220,7 @@
 }
 
 .auction-product-left {
-  width: 70%;
+  width: 100%;
   display: flex;
 }
 
@@ -221,6 +228,11 @@
   width: 30%;
   justify-content: right;
   color: var(--text);
+}
+
+.products-container:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 @media only screen and (min-width: 1910px) {
