@@ -27,6 +27,11 @@
   --default-image: url(./components/Hero/media/darkblue-bg2.jpg);
 }
 
+body {
+  cursor: default;
+  user-select: none;
+}
+
 /*
 
 Green color palette:

@@ -57,14 +57,14 @@ export default function Login() {
         minW={"80%"}
         align={"center"}
         justify={"center"}
-        bg={"white"}
+        bg={"#cae9ff"}
         className="login-signup-flex"
       >
         <Stack
           spacing={4}
           w={"full"}
           maxW={"xl"}
-          bg={useColorModeValue("white", "gray.700")}
+          bg={useColorModeValue("#cae9ff", "gray.700")}
           rounded={"xl"}
           p={6}
           my={12}

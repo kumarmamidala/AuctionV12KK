@@ -77,14 +77,14 @@ export default function Signup() {
         align={"center"}
         justify={"center"}
         // bg={useColorModeValue("gray.50", "gray.800")}
-        bg={"white"}
+        bg={"#cae9ff"}
         className="login-signup-flex"
       >
         <Stack
           spacing={4}
           w={"50%"}
           maxW={"xl"}
-          bg={useColorModeValue("white", "gray.700")}
+          bg={useColorModeValue("#cae9ff", "gray.700")}
           rounded={"xl"}
           p={6}
           my={12}

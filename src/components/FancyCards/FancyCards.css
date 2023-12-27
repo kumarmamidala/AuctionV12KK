@@ -105,6 +105,7 @@ article.card-container__card:after {
   z-index: -1;
   transition: all 0.3s ease-in-out;
   border-radius: 12px;
+  border-radius: 0rem 3rem 2rem 2rem;
   box-shadow: 0px 0px 5px #02355a;
 }
 article.card-container__card:hover {
