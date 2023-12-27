@@ -11,11 +11,11 @@ const WelcomeBanner = ({ data }) => {
         {data.map((item) => {
           return (
             <div className="row ">
-              <div className="col-md-6 d-flex justify-content-center align-items-center pb-5 welcome-banner-image">
-                <img className="img-fluid" src={item.img} alt="" />
+              <div className="col-md-5 d-flex justify-content-center align-items-center pb-5 welcome-banner-image">
+                <img className="welcome-img-12" src={item.img} alt="" />
               </div>
-              <div className="col-md-6 d-flex align-items-center pb-5 welcome-banner-content md:pl-20">
-                <div className="text-black">
+              <div className="col-md-7 d-flex align-items-center pb-5 welcome-banner-content md:pl-20">
+                <div className="text-black w-full">
                   <small className=" title !text-white">{item.heading}</small>
                   <br />
                   <h1 className=" heading !normal-case text-left !text-white">

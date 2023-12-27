@@ -15,6 +15,11 @@
   align-items: baseline;
 }
 
+.appraisal-hero-img {
+  width: 80%;
+  margin-left: 10%;
+}
+
 @media screen and (min-width: 1910px) {
   .explore-section {
     width: 100%;

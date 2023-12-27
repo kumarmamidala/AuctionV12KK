@@ -53,6 +53,10 @@
   background-color: var(--quad-bg);
 }
 
+.welcome-img-12 {
+  width: 75%;
+}
+
 @media only screen and (max-width: 767px) {
   .welcome-banner-content {
     order: 2;

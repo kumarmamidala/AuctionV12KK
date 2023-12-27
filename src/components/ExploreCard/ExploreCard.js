@@ -1,7 +1,7 @@
 import React from "react";
 import { BiBriefcase, BiFolder, BiMap } from "react-icons/bi";
 
-import image from "./media/3.webp";
+import image from "./media/Website Creator-bro.png";
 import "./ExploreCard.css";
 
 const ExploreCard = () => {
@@ -41,7 +41,7 @@ const ExploreCard = () => {
         <button className="red-btn">Get In Touch</button>
       </div>
       <div className="lg:w-1/2 w-full explore-image">
-        <img src={image} alt="" />
+        <img src={image} alt="" className="appraisal-hero-img" />
       </div>
     </div>
   );

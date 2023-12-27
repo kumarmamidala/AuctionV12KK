@@ -1,4 +1,4 @@
-import welsomeImg from "./media/1.webp";
+import welsomeImg from "./media/Analysis-bro.png";
 import img2 from "./media/2.png";
 
 export const DataAuctionAppraisalsWelcomeBanner = [
