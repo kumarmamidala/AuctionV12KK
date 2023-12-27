@@ -31,6 +31,8 @@
   font-family: "Mukta", sans-serif;
   font-size: 20px;
   color: var(--text);
+  display: flex;
+  justify-content: center;
 }
 
 .last-date-div {
@@ -39,6 +41,8 @@
   font-family: "Mukta", sans-serif;
   font-size: 20px;
   width: 16%;
+  display: flex;
+  justify-content: center;
 }
 
 .premium-div {
@@ -51,6 +55,9 @@
 
 .price-div {
   width: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .place-a-bid-div {
   width: 14%;

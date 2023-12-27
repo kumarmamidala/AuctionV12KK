@@ -125,11 +125,10 @@ const Product = ({
         </Fade>
       ) : (
         <Fade bottom>
-          <div></div>
-          <div className="flex p-3 border border-gray-300 rounded-lg shadow-md transition-all auction-price-card1">
+          <div className="flex  border border-gray-300 rounded-lg shadow-md transition-all auction-price-card1">
             {/* DESCRIPTION */}
             <div className="auction-product-left">
-              <div className="flex items-left text-left justify-between  flex-col name-div">
+              <div className="flex items-left text-left justify-between  flex-col name-div ">
                 <Link
                   to={`/Marketplace/${ID}`}
                   className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis heading"
@@ -168,7 +167,7 @@ const Product = ({
               <Popup
                 trigger={
                   <button className="custom-btn main-button place-a-bid-div">
-                    Place a bid.
+                    Bid Now
                   </button>
                 }
                 modal

@@ -101,9 +101,29 @@
   border-top-left-radius: 0px;
   text-align: center;
   align-items: center;
+  padding: 10px 15px;
 }
 
-.products-container:last-child article .auction-price-card1 {
+.auction-price-card-tabs {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: var(--pent-bg);
+  padding: 15px 15px;
+}
+
+.auction-price-card-tabs-home {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: var(--primary-bg);
+  padding: 15px 15px;
+}
+
+.products-container article:last-child .auction-price-card1 {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.home-premium-domains .home-domain:last-child article .auction-price-card1 {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }

@@ -42,12 +42,31 @@ function ContainerFeaturedItems({ data }) {
       ) : (
         <Fade bottom>
           <div className="featured-cards-total  ">
-            {data &&
-              data.slice(0, 4).map((item, idx) => (
-                <div key={item?.ID}>
-                  <Product key={item?.id} {...item} />
+            <div className="products-container">
+              <div className=" auction-price-card1 auction-price-card-tabs-home">
+                <div className="auction-product-left">
+                  <div className="flex items-left text-left justify-between  flex-col name-div heading !text-white">
+                    Domain
+                  </div>
+                  <div className="premium-div heading text-white">
+                    <span>Category</span>
+                  </div>
+                  <div className="bid-div heading text-white">Bids</div>
+                  <div className="last-date-div time-left heading text-white">
+                    Time Left
+                  </div>
+                  <div className="price-div heading text-white">Price</div>
                 </div>
-              ))}
+              </div>
+            </div>
+            <div className="home-premium-domains">
+              {data &&
+                data.slice(0, 4).map((item, idx) => (
+                  <div key={item?.ID} className="home-domain">
+                    <Product key={item?.id} {...item} />
+                  </div>
+                ))}
+            </div>
           </div>
         </Fade>
       )}
