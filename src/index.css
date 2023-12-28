@@ -173,3 +173,7 @@ body {
 .awssld__timer {
   --timer-height: 2px !important;
 }
+
+.active {
+  background-color: transparent !important;
+}

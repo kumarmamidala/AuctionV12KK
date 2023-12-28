@@ -14,16 +14,22 @@ const Sort = () => {
     updateSort,
   } = useFilterContext();
 
-  const Icon = ({ isActive }) => {
+  const Icon = ({ isActive, isAscending }) => {
     return (
-      <span className={`icon ${isActive ? "active" : ""}`}>
-        {isActive ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
+      <span className={`icon ${isActive ? "active" : ""} sort-iconn`} >
+        {isActive ? (
+          isAscending ? (
+            <AiOutlineArrowUp  />
+          ) : (
+            <AiOutlineArrowDown />
+          )
+        ) : null}
       </span>
     );
   };
 
   const isNameSort = sort.startsWith("name");
-  const isPriceSort = sort.startsWith("price");
+  const isAscending = sort.endsWith("-a");
 
   const handleSortClick = (sortOption) => {
     // Determine the current sort order and toggle it
@@ -38,13 +44,13 @@ const Sort = () => {
       <div className=" auction-price-card1 auction-price-card-tabs">
         <div className="auction-product-left">
           <div
-            className={`flex items-left text-left justify-between  flex-col name-div heading ${
+            className={`items-left text-left flex flex-nowrap name-div cursor-pointer text-white heading ${
               isNameSort ? "active" : ""
             }`}
             onClick={() => handleSortClick("name")}
           >
             Domain
-            <Icon isActive={isNameSort} />
+            <Icon isActive={isNameSort} isAscending={isAscending} />
           </div>
           <div className="premium-div heading text-white">
             <span>Category</span>
@@ -53,25 +59,10 @@ const Sort = () => {
           <div className="last-date-div time-left heading text-white">
             Time Left
           </div>
-          <div
-            className={`premium-div heading text-white ${
-              isPriceSort ? "active" : ""
-            }`}
-            onClick={() => handleSortClick("price")}
-          >
+          <div className="price-div heading text-white">
             <span>Price</span>
-            <Icon isActive={isPriceSort} />
           </div>
         </div>
-      </div>
-      <div className="btnn-container ">
-        <button
-          type="button"
-          className={`${grid_view ? "active" : null}`}
-          onClick={setGridView}
-        >
-          <MdDomainVerification />
-        </button>
       </div>
     </Wrapper>
   );
@@ -158,7 +149,7 @@ const Wrapper = styled.section`
       }
     }
     .active {
-      background: var(--clr-black);
+      background: transparent !important;
       color: var(--primary-bg);
       border: 1px solid var(--primary-bg);
     }

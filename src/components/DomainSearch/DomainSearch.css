@@ -293,3 +293,9 @@
     flex-direction: column;
   }
 }
+
+
+.sort-iconn{
+  display: flex;
+  align-items: center;
+}
