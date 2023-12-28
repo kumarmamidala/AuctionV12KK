@@ -31,9 +31,9 @@ const ProductList = () => {
     return (
       <h5
         style={{ fontSize: "2.5rem", fontWeight: "bold" }}
-        className="paragraph"
+        className="paragraph text-white mt-[20px] ml-[20px]"
       >
-        Loading...
+        Loading the products...
       </h5>
     );
   }

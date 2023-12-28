@@ -96,21 +96,21 @@ const Filters = () => {
               name="sort"
               id="sort"
               className="sort-input"
-              class="login-signup-input domain-auctions-input !text-white"
+              class="login-signup-input domain-auctions-input !text-white !text-[16px]"
               value={sort}
               onChange={updateSort}
             >
               <option value="price-lowest" class="paragraph">
-                price (lowest)
+                Price (Low - High)
               </option>
               <option value="price-highest" class="paragraph">
-                price (highest)
+                Price (High - Low)
               </option>
               <option value="name-a" class="paragraph">
-                name (a-z)
+                Name (A-Z)
               </option>
               <option value="name-z" class="paragraph">
-                name (z-a)
+                Name (Z-A)
               </option>
             </select>
           </form>
