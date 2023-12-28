@@ -2,6 +2,8 @@ import React from "react";
 import { useFilterContext } from "../../Context/filter_context";
 import { MdDomainVerification } from "react-icons/md";
 import styled from "styled-components";
+import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
+
 const Sort = () => {
   const {
     filtered_products: products,
@@ -11,12 +13,38 @@ const Sort = () => {
     sort,
     updateSort,
   } = useFilterContext();
+
+  const Icon = ({ isActive }) => {
+    return (
+      <span className={`icon ${isActive ? "active" : ""}`}>
+        {isActive ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
+      </span>
+    );
+  };
+
+  const isNameSort = sort.startsWith("name");
+  const isPriceSort = sort.startsWith("price");
+
+  const handleSortClick = (sortOption) => {
+    // Determine the current sort order and toggle it
+    const currentSortOrder = sort.endsWith("-a") ? "-a" : "-z";
+    const newSortOption =
+      sortOption + (currentSortOrder === "-a" ? "-z" : "-a");
+    updateSort({ target: { value: newSortOption } });
+  };
+
   return (
     <Wrapper>
       <div className=" auction-price-card1 auction-price-card-tabs">
         <div className="auction-product-left">
-          <div className="flex items-left text-left justify-between  flex-col name-div heading !text-white">
+          <div
+            className={`flex items-left text-left justify-between  flex-col name-div heading ${
+              isNameSort ? "active" : ""
+            }`}
+            onClick={() => handleSortClick("name")}
+          >
             Domain
+            <Icon isActive={isNameSort} />
           </div>
           <div className="premium-div heading text-white">
             <span>Category</span>
@@ -25,10 +53,18 @@ const Sort = () => {
           <div className="last-date-div time-left heading text-white">
             Time Left
           </div>
-          <div className="price-div heading text-white">Price</div>
+          <div
+            className={`premium-div heading text-white ${
+              isPriceSort ? "active" : ""
+            }`}
+            onClick={() => handleSortClick("price")}
+          >
+            <span>Price</span>
+            <Icon isActive={isPriceSort} />
+          </div>
         </div>
       </div>
-      {/* <div className="btnn-container ">
+      <div className="btnn-container ">
         <button
           type="button"
           className={`${grid_view ? "active" : null}`}
@@ -37,33 +73,6 @@ const Sort = () => {
           <MdDomainVerification />
         </button>
       </div>
-      <p class="!font-bold paragraph ">{products.length} products found</p>
-      <hr />
-      <form className="label-style">
-        <label htmlFor="sort" class="paragraph">
-          sort by&nbsp;&nbsp; &nbsp;&nbsp;
-        </label>
-        <select
-          name="sort"
-          id="sort"
-          className="sort-input"
-          value={sort}
-          onChange={updateSort}
-        >
-          <option value="price-lowest" class="paragraph">
-            price (lowest)
-          </option>
-          <option value="price-highest" class="paragraph">
-            price (highest)
-          </option>
-          <option value="name-a" class="paragraph">
-            name (a-z)
-          </option>
-          <option value="name-z" class="paragraph">
-            name (z-a)
-          </option>
-        </select>
-      </form> */}
     </Wrapper>
   );
 };
