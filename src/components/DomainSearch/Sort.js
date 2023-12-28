@@ -16,27 +16,34 @@ const Sort = () => {
 
   const Icon = ({ isActive, isAscending }) => {
     return (
-      <span className={`icon ${isActive ? "active" : ""} sort-iconn`} >
+      <span className={`icon ${isActive ? "active" : ""} sort-iconn`}>
         {isActive ? (
-          isAscending ? (
-            <AiOutlineArrowUp  />
-          ) : (
-            <AiOutlineArrowDown />
-          )
+          <React.Fragment>
+            {isAscending ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
+          </React.Fragment>
         ) : null}
       </span>
     );
   };
 
   const isNameSort = sort.startsWith("name");
-  const isAscending = sort.endsWith("-a");
+  const isPriceSort = sort.startsWith("price");
+  const isAscending = sort.endsWith("-a") || sort.endsWith("-lowest");
 
   const handleSortClick = (sortOption) => {
-    // Determine the current sort order and toggle it
-    const currentSortOrder = sort.endsWith("-a") ? "-a" : "-z";
-    const newSortOption =
-      sortOption + (currentSortOrder === "-a" ? "-z" : "-a");
-    updateSort({ target: { value: newSortOption } });
+    if (sortOption === "price") {
+      // Determine the current sort order and toggle it for Price
+      const currentSortOrder = sort.endsWith("-lowest")
+        ? "-highest"
+        : "-lowest";
+      const newSortOption = sortOption + currentSortOrder;
+      updateSort({ target: { value: newSortOption } });
+    } else {
+      // Determine the current sort order and toggle it for Name
+      const currentSortOrder = sort.endsWith("-a") ? "-z" : "-a";
+      const newSortOption = sortOption + currentSortOrder;
+      updateSort({ target: { value: newSortOption } });
+    }
   };
 
   return (
@@ -44,7 +51,7 @@ const Sort = () => {
       <div className=" auction-price-card1 auction-price-card-tabs">
         <div className="auction-product-left">
           <div
-            className={`items-left text-left flex flex-nowrap name-div cursor-pointer text-white heading ${
+            className={`name-div heading items-left text-left flex flex-nowrap cursor-pointer text-white  ${
               isNameSort ? "active" : ""
             }`}
             onClick={() => handleSortClick("name")}
@@ -59,8 +66,14 @@ const Sort = () => {
           <div className="last-date-div time-left heading text-white">
             Time Left
           </div>
-          <div className="price-div heading text-white">
+          <div
+            className={`price-div heading text-white cursor-pointer ${
+              isPriceSort ? "active" : ""
+            }`}
+            onClick={() => handleSortClick("price")}
+          >
             <span>Price</span>
+            <Icon isActive={isPriceSort} isAscending={isAscending} />
           </div>
         </div>
       </div>

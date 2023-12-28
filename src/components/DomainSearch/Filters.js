@@ -86,34 +86,6 @@ const Filters = () => {
           </div>
           {/* end of companies */}
 
-          <form
-          // className="label-style"
-          >
-            <label htmlFor="sort" class="paragraph form-control">
-              <h5>sort by&nbsp;&nbsp; &nbsp;&nbsp;</h5>
-            </label>
-            <select
-              name="sort"
-              id="sort"
-              className="sort-input"
-              class="login-signup-input domain-auctions-input !text-white !text-[16px]"
-              value={sort}
-              onChange={updateSort}
-            >
-              <option value="price-lowest" class="paragraph">
-                Price (Low - High)
-              </option>
-              <option value="price-highest" class="paragraph">
-                Price (High - Low)
-              </option>
-              <option value="name-a" class="paragraph">
-                Name (A-Z)
-              </option>
-              <option value="name-z" class="paragraph">
-                Name (Z-A)
-              </option>
-            </select>
-          </form>
 
           {/* price */}
           <div className="form-control mb-0 price-below-part">
