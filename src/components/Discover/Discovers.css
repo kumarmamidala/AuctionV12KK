@@ -17,7 +17,6 @@
 
 .discover_btn {
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;
   color: white;
 }
 
@@ -35,14 +34,12 @@
 
 .domain-cards .domain-card-head {
   color: var(--text-white);
-  font-family: "Mukta", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
 
 .domain-cards .domain-card-para {
   color: var(--text-white);
-  font-family: "Mukta", sans-serif;
   font-size: 20px;
   line-height: 150%;
   margin: 18px 0px !important;

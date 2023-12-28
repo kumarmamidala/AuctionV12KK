@@ -41,7 +41,7 @@ const ContentHomePage = () => {
               fontWeight={'bold'}
               marginBottom={{ base: '10px', lg: '20px' }}
               textAlign={'left'}
-              fontFamily="Marcellus"
+          
             >
               <Text className={style.auction_hero_heading}>
                 Remove barriers, <br /> find clarity, <br /> exceed goals.

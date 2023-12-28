@@ -173,13 +173,13 @@ const PopUpItem = ({ ID, price, amount, bidders, Deadline, name, status }) => {
                   domain is the domain of your choice.
                 </p>
                 <p class="heading-sub pt-4 opacity-[80%]">Bid Now</p>
-                <ul class="popup-left-list paragraph-sub !font-[Mukta] ">
+                <ul class="popup-left-list paragraph-sub">
                   <li className="w-[30%]">
                     <span>Total bids so far: </span>
                     <span className="text-primary font-bold">{bidders}</span>
                   </li>
                   <li className="w-[70%]">
-                    <div className="flex !font-[Mukta] justify-end mt-[2px]">
+                    <div className="flex justify-end mt-[2px]">
                       <span className="font-bold">
                         Time Left to bid: &nbsp;{" "}
                       </span>

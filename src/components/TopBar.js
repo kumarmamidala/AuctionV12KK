@@ -51,7 +51,7 @@ function TopBar() {
 
           <div className="flex w-full justify-end relative left-[-10px]">
             <div className="flex items-center space-x-4">
-              <div className="hidden lg:flex space-x-8 justify-around items-end space-y-2 text-[18px] pb-2 mr-4 font-[Marcellus] ">
+              <div className="hidden lg:flex space-x-8 justify-around items-end space-y-2 text-[18px] pb-2 mr-4">
                 <Link to="/featured" className=" Nav-linkk ">
                   Domain Auctions
                 </Link>

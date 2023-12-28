@@ -70,16 +70,16 @@ const Footerr = () => {
             <div>
               <img src={logo} alt="" className="footer-logo" />
             </div>
-            <p className="text-gray-500  !text-white paragraph-white font-[Inter] mt-[20px] ">
+            <p className="text-gray-500  !text-white paragraph-white mt-[20px] ">
               At .GOLD AUCTIONS, we're passionate about transforming business
               operations and driving success in a fast-evolving tech landscape.
             </p>
           </div>
           <div class="col-md-2 ml-[5%]">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white ">
               Quick Links
             </h2>
-            <ul className="text-white font-[Inter] flex flex-col">
+            <ul className="text-white flex flex-col">
               <Link to="/Solutions" className="timeline-item-content">
                 <li className="footer_links text-underline">Domain Auctions</li>
               </Link>
@@ -97,7 +97,7 @@ const Footerr = () => {
             </ul>
           </div>
           <div class="col-md-2 ml-[3%] mr-[2%]">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white">
               Connect
             </h2>
             <ul className="text-white flex flex-col">
@@ -115,10 +115,10 @@ const Footerr = () => {
             </ul>
           </div>
           <div className="col-md-3">
-            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white font-['Mukta']">
+            <h2 className="text-2xl font-bold mb-2 md:mt-[10px] text-white ">
               Address
             </h2>
-            <ul className="text-white font-['Mukta'] text-[18px] text-[#ffffffdb] leading-[28px]">
+            <ul className="text-white text-[18px] text-[#ffffffdb] leading-[28px]">
               <li className="">
                 2-5- 538/D, 4th Floor, <br />
                 Dr. KSR Sastry Business Park, <br />

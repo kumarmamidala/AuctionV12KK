@@ -35,7 +35,6 @@ $breakpoint-mobile: 750px;
       text-align: left;
       margin: 20px 20px 0px 20px;
       color: var(--text);
-      font-family: "Haffer";
 
       @media (max-width: $breakpoint-mobile) {
         width: 80%;
@@ -53,7 +52,6 @@ $breakpoint-mobile: 750px;
       font-weight: 200;
       font-size: 1.2rem;
       color: var(--text);
-      font-family: "Haffer";
 
       @media (max-width: $breakpoint-mobile) {
         font-size: 0.7rem;
@@ -71,7 +69,6 @@ $breakpoint-mobile: 750px;
       font-weight: 200;
       text-align: right;
       margin-right: 30px;
-      font-family: "Haffer";
 
       @media (max-width: $breakpoint-mobile) {
         margin: 5px 30px 0 0;

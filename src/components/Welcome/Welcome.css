@@ -40,7 +40,6 @@
 .photos > div > h1,
 .menu > div > h1,
 .eventsHeader > h1 {
-  /* font-family: cursive; */
   /* font-size: 50px; */
   /* padding-top: 40px; */
   text-align: center;
@@ -66,7 +65,6 @@
   color: #545b61;
   padding: 10px;
   font-weight: 300;
-  font-family: cursive;
   margin-bottom: 20px;
 }
 
@@ -212,14 +210,12 @@
     color: #545b61;
     padding: 1px;
     font-weight: 200;
-    font-family: cursive;
   }
   .rooms > div > h1,
   .welcome > div > h1,
   .photos > div > h1,
   .menu > div > h1,
   .eventsHeader > h1 {
-    /* font-family: cursive; */
     font-size: 35px;
 
     padding: 0px;

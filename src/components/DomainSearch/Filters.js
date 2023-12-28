@@ -158,13 +158,11 @@ const Wrapper = styled.section`
       font-size: 18px;
       font-weight: 800;
       text-transform: uppercase;
-      font-family: "Mukta", sans-serif;
       color: var(--text-white);
       margin-top: 25px;
     }
   }
   .search-input {
-    font-family: "Haffer";
     border-radius: 4px;
     border: 1px solid black !important;
   }
@@ -190,7 +188,6 @@ const Wrapper = styled.section`
     border: none;
     letter-spacing: var(--spacing);
     cursor: pointer;
-    font-family: "Mukta", sans-serif;
     color: var(--text-white);
     font-size: 16px;
   }
@@ -202,7 +199,6 @@ const Wrapper = styled.section`
     border-radius: 6px;
     border-color: var(--text);
     padding: 8px 12px;
-    font-family: "Mukta", sans-serif;
     font-size: 16px;
     width: 100%;
     color: var(--text);
@@ -246,7 +242,6 @@ const Wrapper = styled.section`
     margin-bottom: 0.5rem;
     font-weight: 800;
     font-size: 18px;
-    font-family: "Mukta", sans-serif;
     color: var(--text-white);
   }
   .shipping {
@@ -287,7 +282,6 @@ const Wrapper = styled.section`
     }
   }
   .popular {
-    font-family: "Haffer";
     font-size: 18px;
   }
   @media only screen and (max-width: 767px) {

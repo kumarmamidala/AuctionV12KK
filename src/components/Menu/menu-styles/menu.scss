@@ -28,7 +28,6 @@ $breakpoint-mobile: 785px;
     h1 {
       /* the title */
       color: var(--text);
-      // font-family: cursive;
       //   margin-top: -20px;
       // font-size: 50px;
       // padding-top: 0px;
@@ -46,13 +45,11 @@ $breakpoint-mobile: 785px;
       padding-top: 15px;
       padding: 10px;
       font-weight: 300;
-      font-family: cursive;
       margin: 0px 40px;
 
       @media (max-width: $breakpoint-mobile) {
         margin: 0px 10px;
         padding-top: 4px;
-        font-family: Verdana, Geneva, Tahoma, serif;
       }
     }
   }
@@ -90,7 +87,6 @@ $breakpoint-mobile: 785px;
       transition: text-decoration 1.5s;
       transition: text-decoration 1.5s, -webkit-text-decoration 1.5s;
       /* letter-spacing: 10px; */
-      font-family: "Haffer";
       color: var(--text);
 
       @media (max-width: $breakpoint-mobile) {
@@ -159,7 +155,6 @@ $breakpoint-mobile: 785px;
 
       h3 {
         font-size: 1.8rem;
-        font-family: monospace;
         color: #ffba5a;
         font-weight: 200;
         display: block;
@@ -175,7 +170,6 @@ $breakpoint-mobile: 785px;
         width: 100%;
         margin: auto;
         font-size: 1.4rem;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
         @media (max-width: $breakpoint-mobile) {
           font-size: 1rem;

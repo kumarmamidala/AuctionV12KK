@@ -63,7 +63,6 @@
   text-transform: uppercase;
   justify-content: center;
   gap: 10px;
-  font-family: "Open sans";
   background: var(--text-quad);
   align-items: center;
   padding: 5px 10px;
@@ -117,7 +116,6 @@
 .footer_links {
   font-size: 18px;
   line-height: 44px;
-  font-family: "Mukta";
 }
 
 .footer_links:hover {
@@ -157,7 +155,6 @@
   color: var(--text) !important;
   z-index: 9;
   margin-right: 20px !important;
-  font-family: "Open Sans";
   font-weight: 900;
   border: 2px solid #002549;
   border-radius: 8px;

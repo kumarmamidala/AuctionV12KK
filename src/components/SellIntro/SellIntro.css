@@ -8,7 +8,6 @@
   border-radius: 13px;
   margin-top: 3px;
   margin-right: 10px;
-  font-family: "Mukta", sans-serif;
 }
 
 .home_fourth-section-Box-1 {
@@ -52,7 +51,6 @@
   margin-bottom: 10px;
 }
 .paragraph-list {
-  font-family: "Mukta", sans-serif !important;
   font-size: 25px !important;
   font-weight: 400 !important;
   color: var(--text);

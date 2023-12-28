@@ -48,7 +48,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
   font-weight: bold;
-  font-family: "Mukta", sans-serif;
   font-size: 20px;
   font-weight: 500;
   transition: all 100ms ease-in-out;
@@ -64,7 +63,6 @@ body {
 }
 
 .topbar-para {
-  font-family: "Mukta", sans-serif !important;
   font-size: 20px !important;
   color: #25cbd3 !important;
 }
@@ -74,7 +72,6 @@ body {
   color: var(--text);
   padding: 5px 20px 5px 5px;
   border-radius: 8px;
-  font-family: "Mukta", sans-serif;
   font-size: 22px;
   font-weight: 800;
 }
@@ -204,7 +201,6 @@ body {
 }
 
 .nav-buttons {
-  font-family: "Haffer";
   font-weight: 400 !important;
 }
 
@@ -235,7 +231,6 @@ body {
   color: var(--text-primary);
   /* / padding: 14px 16px; / */
   background-color: inherit;
-  font-family: "Mukta", sans-serif;
   margin: 0;
   padding: 13px 0px;
 }
@@ -280,7 +275,6 @@ body {
   font-size: 16px;
   border-bottom: 1px solid var(--text-white) !important;
   width: 150px;
-  font-family: "Open Sans", sans-serif;
   border: 1px solid var(--text-white) !important;
   transition: all 300ms ease-in-out;
 }
@@ -303,7 +297,6 @@ body {
   color: var(--text) !important;
   padding: 0px 20px;
   border-radius: 8px;
-  font-family: "Mukta", sans-serif;
   font-size: 16px;
   border: 2px solid transparent;
   transition: 300ms ease-in-out;
@@ -334,7 +327,6 @@ body {
 }
 
 .loggedin-user {
-  font-family: "Mukta", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;

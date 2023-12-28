@@ -49,7 +49,6 @@
 
 .title-sub1 {
   margin-left: 0px;
-  font-family: "Mukta";
   font-size: 18px;
   line-height: 30px;
   color: grey;
@@ -120,7 +119,6 @@
 }
 
 .actual-address {
-  font-family: "Metropolis-semibold";
 }
 
 /* .profile-info-part::after {
@@ -167,7 +165,6 @@ h1 {
 }
 
 .profile-name {
-  font-family: "Mukta";
   font-size: 28px;
   line-height: 30px;
   color: var(--text);
@@ -209,7 +206,6 @@ li {
   background: #101c4c;
   padding: 20px;
   color: white;
-  font-family: "Metropolis-regular";
   border-radius: 12px;
   position: relative;
   width: 40%;
@@ -296,7 +292,6 @@ li {
   text-align: left !important;
   align-items: flex-start !important; /* Change "self-start" to "flex-start" for correct alignment */
   text-transform: capitalize !important;
-  font-family: "Metropolis-medium" !important;
   padding: 15px !important;
 }
 
@@ -392,13 +387,11 @@ li {
 }
 
 .domain-detail-div-inner {
-  font-family: "Metropolis-semibold";
 }
 
 .back-btn {
   background: #101c4c;
   color: white;
-  font-family: "Metropolis-semibold";
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -419,7 +412,6 @@ li {
 .nameserver-tab {
   width: 49%;
   margin: 10px 0px;
-  font-family: "Metropolis-regular";
 }
 
 .name-server-input:focus {
@@ -431,21 +423,17 @@ li {
   color: white;
   padding: 5px 10px;
   border-radius: 8px;
-  font-family: "Metropolis-semibold";
 }
 
 .nameserver-note {
-  font-family: "Metropolis-regular";
   margin: 15px 0px;
   font-size: 15px;
 }
 
 .nameserver-note-span {
-  font-family: "Metropolis-semibold";
 }
 
 .registrant-contact {
-  font-family: "Metropolis-regular";
   margin: 30px 0px 10px;
   width: -moz-fit-content;
   width: fit-content;
@@ -469,18 +457,14 @@ li {
 }
 
 .registrant-contact p span {
-  font-family: "Metropolis-semibold";
 }
 
 .dns-management-tab {
-  font-family: "Metropolis-regular";
 }
 
 .m-sbold {
-  font-family: "Metropolis-semibold";
 }
 .dns-managment-inner-tab {
-  font-family: "Metropolis-regular";
   border-radius: 6px;
   margin: auto;
   padding: 2px 5px;
@@ -506,11 +490,9 @@ li {
 .profile-dash-item {
   font-size: 18px;
   margin-top: 2px;
-  font-family: "Mukta";
 }
 
 .domain-detail-inner-span {
-  font-family: "Mukta";
   color: grey;
 }
 
@@ -542,7 +524,6 @@ li {
 .list-part {
   display: flex;
   width: 100%;
-  font-family: "Metropolis-regular";
   align-items: center;
   padding-bottom: 10px;
   padding: 10px;
@@ -775,7 +756,6 @@ li {
 
   .list-item-name {
     width: 60%;
-    font-family: "Metropolis-semibold";
     font-size: 22px;
   }
   .list-item-expiry {
@@ -791,7 +771,6 @@ li {
   }
 
   .list-part-mobile {
-    font-family: "Metropolis-regular";
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -801,7 +780,6 @@ li {
   }
 
   .expiry-date-mobile {
-    font-family: "Metropolis-semibold";
   }
 
   .domain-details {

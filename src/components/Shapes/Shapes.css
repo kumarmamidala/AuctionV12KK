@@ -16,7 +16,6 @@
 }
 
 .random-shape:after {
-  font-family: FontAwesome;
   content: "";
 }
 

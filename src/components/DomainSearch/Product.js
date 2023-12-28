@@ -160,7 +160,7 @@ const Product = ({
               </div>
               <Link
                 to={`/Marketplace/${ID}`}
-                className="p-2 px-3 text-[24px] leading-3 font-bold  scale-90 font-['Mukta'] hover:text-black price-div"
+                className="p-2 px-3 text-[24px] leading-3 font-bold  scale-90 hover:text-black price-div"
               >
                 Rs. {Price}
               </Link>

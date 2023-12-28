@@ -68,7 +68,6 @@
 }
 
 .bid1-input {
-  font-family: "Open Sans", sans-serif;
   border: 1px solid black;
   border-right: 0px;
   border-radius: 4px;
@@ -200,7 +199,6 @@
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: none;
-  font-family: "Haffer";
 }
 
 .popup-input-amount:focus {
@@ -213,7 +211,6 @@
 }
 
 .paragraph-popup-small {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   text-align: left;
 }

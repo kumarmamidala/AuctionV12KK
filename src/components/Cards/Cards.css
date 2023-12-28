@@ -28,7 +28,6 @@
 .bid-div {
   width: 8%;
   align-items: center;
-  font-family: "Mukta", sans-serif;
   font-size: 20px;
   color: var(--text);
   display: flex;
@@ -38,7 +37,6 @@
 .last-date-div {
   width: fit-content;
   align-items: center;
-  font-family: "Mukta", sans-serif;
   font-size: 20px;
   width: 16%;
   display: flex;
@@ -117,7 +115,6 @@
   border-radius: 20px;
   background-color: var(--tertiary-bg);
   color: var(--text);
-  font-family: "Mukta";
 }
 
 .home-premium-domain-bid {

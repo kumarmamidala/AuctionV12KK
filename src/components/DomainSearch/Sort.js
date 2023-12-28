@@ -151,7 +151,6 @@ const Wrapper = styled.section`
     color: var(--text);
     text-transform: capitalize;
     padding: 0.25rem 0.5rem;
-    font-family: "Mukta", sans-serif;
     background: transparent;
     color: var(--text);
   }

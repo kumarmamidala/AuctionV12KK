@@ -29,7 +29,7 @@ const Testimonials = () => {
         >
           {testimonialsData[selected].review}
         </motion.span>
-        <span class="font-['Open_Sans'] !text-[#fbcb04]">
+        <span class=" !text-[#fbcb04]">
           <span style={{ color: "var(--orange}" }}>
             {testimonialsData[selected].name} -{" "}
             {testimonialsData[selected].status}

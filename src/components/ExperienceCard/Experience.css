@@ -1,5 +1,4 @@
 .Learn-more-hero {
-  font-family: "Open sans", sans-serif;
   font-size: 17px;
   margin-top: 20px;
   position: relative;
@@ -140,7 +139,6 @@
   line-height: 150%;
   margin: 0.5rem 0;
   color: var(--text) !important;
-  font-family: "Source Sans Pro";
 }
 
 .buyers-sellers-div {
@@ -192,7 +190,6 @@
 }
 
 .dash-item {
-  font-family: "Mukta";
   font-size: 32px;
   text-transform: none;
   color: var(--text);

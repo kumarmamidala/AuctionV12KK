@@ -74,7 +74,6 @@ $breakpoint-mobile: 1300px;
         }
 
         h1 {
-          font-family: Georgia, "Times New Roman", Times, serif;
           padding: 0px 10px;
 
           @media (max-width: $breakpoint-mobile) {
@@ -84,7 +83,7 @@ $breakpoint-mobile: 1300px;
         }
 
         h2 {
-          font-family: monospace;
+   
           color: #545b61;
           text-align: center;
           margin-right: 70px;
@@ -98,7 +97,6 @@ $breakpoint-mobile: 1300px;
           color: #545b61;
           margin: 10px;
           padding-bottom: 20px;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
           @media (max-width: $breakpoint-mobile) {
             font-size: 14px;
             margin: 7px;
@@ -119,7 +117,6 @@ $breakpoint-mobile: 1300px;
         }
         h1 {
           position: relative;
-          font-family: cursive;
           background-size: contain;
           bottom: 90px;
           width: fit-content;
@@ -133,7 +130,6 @@ $breakpoint-mobile: 1300px;
             color: #fff;
             z-index: 3;
             opacity: 1;
-            font-family: "Haffer";
           }
 
           &:hover {
