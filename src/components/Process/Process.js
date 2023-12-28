@@ -4,15 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAddressBook,
-  faCalendarDays,
-  faPenRuler,
-  faTruck,
-  faPuzzlePiece,
-  faFlagCheckered,
-  faEllipsisVertical,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 
 import {
   GiUnicorn,
@@ -22,7 +14,6 @@ import {
   GiMagnet,
 } from "react-icons/gi";
 import { TbLayersDifference } from "react-icons/tb";
-import { IoMagnet } from "react-icons/io";
 
 import Fade from "react-reveal/Fade";
 
@@ -32,10 +23,10 @@ function Main() {
       <main className="why-gold">
         <section className="processContainer" id="processContainer">
           <Fade bottom>
-            <h1 className="  title ">
+            <h1 className="  title !text-white ">
               Why <span class="text-pent"> .Gold Domain</span> extension ?
             </h1>
-            <p className="home-subtitle">
+            <p className="home-subtitle !text-white">
               .Gold domains signify prestige, enhancing trust, and uniqueness in
               online branding
             </p>
@@ -45,7 +36,6 @@ function Main() {
               <div className="aniItemRight">
                 <div className="icons">
                   <div className="aniItemIconContainer">
-                    {/* <FontAwesomeIcon className="aniItemIcon" icon={faAddressBook} /> */}
                     <GiUnicorn className="aniItemIcon" />
                   </div>
 
@@ -56,7 +46,7 @@ function Main() {
                 </div>
 
                 <div className="processAnimationText">
-                  <h3 class="heading-sub">Unique </h3>
+                  <h3 class="heading-sub ">Unique </h3>
                   <p class="paragraph">
                     Unique, memorable .gold extensions are perfect for your gold
                     based businesses.
@@ -66,10 +56,6 @@ function Main() {
               <div className="aniItemLeft">
                 <div className="reverse icons">
                   <div className="aniItemIconContainer blue">
-                    {/* <FontAwesomeIcon
-                  className="aniItemIconBlue"
-                  icon={faCalendarDays}
-                /> */}
                     <GiPisaTower className="aniItemIconBlue" />
                   </div>
                   <FontAwesomeIcon
@@ -83,18 +69,12 @@ function Main() {
                   <p class="paragraph">
                     .gold domain extension enhances brand recognition, sets
                     apart from competition.
-                    {/* , and conveys trust and luxury online. Choose
-                .gold. */}
                   </p>
                 </div>
               </div>
               <div className="aniItemRight">
                 <div className="icons">
                   <div className="aniItemIconContainer orange">
-                    {/* <FontAwesomeIcon
-                  className="aniItemIconOrange"
-                  icon={faPenRuler}
-                /> */}
                     <TbLayersDifference className="aniItemIconOrange" />
                   </div>
                   <FontAwesomeIcon
@@ -113,7 +93,6 @@ function Main() {
               <div className="aniItemLeft">
                 <div className="reverse icons">
                   <div className="aniItemIconContainer">
-                    {/* <FontAwesomeIcon className="aniItemIcon" icon={faTruck} /> */}
                     <GiMagnet className="aniItemIcon" />
                   </div>
                   <FontAwesomeIcon
@@ -127,17 +106,12 @@ function Main() {
                   <p class="paragraph">
                     .gold domain extension grabs attention, making it
                     unforgettable.
-                    {/* in the online world. */}
                   </p>
                 </div>
               </div>
               <div className="aniItemRight">
                 <div className="icons">
                   <div className="aniItemIconContainer blue">
-                    {/* <FontAwesomeIcon
-                  className="aniItemIconBlue"
-                  icon={faPuzzlePiece}
-                /> */}
                     <GiGoldBar className="aniItemIconBlue" />
                   </div>
                   <FontAwesomeIcon
@@ -157,10 +131,6 @@ function Main() {
               <div className="aniItemLeft">
                 <div className="reverse icons">
                   <div className="aniItemIconContainer orange">
-                    {/* <FontAwesomeIcon
-                  className="aniItemIconOrange"
-                  icon={faFlagCheckered}
-                /> */}
                     <GiCutDiamond className="aniItemIconOrange" />
                   </div>
                   <FontAwesomeIcon

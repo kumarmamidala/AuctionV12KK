@@ -7,7 +7,7 @@
 
 .why-gold {
   background-image: url(./../Hero/media/Two2.png);
-  background: var(--tertiary-bg);
+  background: var(--primary-bg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
