@@ -4,6 +4,9 @@ import "./Container.css";
 import Fade from "react-reveal/Fade";
 import loader from "./../Cards/loader-timer-main.gif";
 import Product from "../DomainSearch/Product";
+import { Link } from "react-router-dom";
+
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function ContainerFeaturedItems({ data }) {
   const [loading, setLoading] = useState(true);
@@ -61,11 +64,16 @@ function ContainerFeaturedItems({ data }) {
             </div>
             <div className="home-premium-domains">
               {data &&
-                data.slice(0, 4).map((item, idx) => (
+                data.slice(0, 8).map((item, idx) => (
                   <div key={item?.ID} className="home-domain">
                     <Product key={item?.id} {...item} />
                   </div>
                 ))}
+              <div className="show-more-div">
+                <Link to="/featured" className="show-more-btn-home ">
+                  Show More <FaLongArrowAltRight />
+                </Link>
+              </div>
             </div>
           </div>
         </Fade>

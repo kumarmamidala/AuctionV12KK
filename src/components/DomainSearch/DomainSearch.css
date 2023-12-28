@@ -127,6 +127,14 @@
   border-bottom-right-radius: 8px;
 }
 
+.home-premium-domains
+  .home-domain:nth-last-child(2)
+  article
+  .auction-price-card1 {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .bid1-input:focus {
   outline: 0px;
 }
@@ -294,8 +302,7 @@
   }
 }
 
-
-.sort-iconn{
+.sort-iconn {
   display: flex;
   align-items: center;
 }
