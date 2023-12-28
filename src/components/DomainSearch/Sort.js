@@ -65,7 +65,7 @@ const Wrapper = styled.section`
   padding-right: 9px;
   padding: 8px 10px;
   background: var(--secondary-bg);
-  box-shadow: 0px -21px 0px 10px var(--tertiary-bg);
+  box-shadow: 0px -21px 0px 10px var(--primary-bg);
   margin-bottom: 2rem;
   column-gap: 2rem;
   border: 0.5px solid #8080802e;

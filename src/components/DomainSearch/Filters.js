@@ -14,15 +14,19 @@ const Filters = () => {
       max_price,
       Shipping,
     },
+    filtered_products: products,
     updateFilters,
     clearFilter,
     all_products,
+    sort,
+    updateSort,
   } = useFilterContext();
   const Categories = getUniqueValues(all_products, "Category");
   const Companies = getUniqueValues(all_products, "Speciality");
   return (
     <Wrapper>
       <div className="contentfilter">
+        <p class="!font-bold paragraph ">{products.length} products found</p>
         <form onSubmit={(e) => e.preventDefault()} className="">
           {/* search input */}
           <div className="form-control">
@@ -33,7 +37,7 @@ const Filters = () => {
               className="search-input"
               value={text}
               onChange={updateFilters}
-              class="login-signup-input"
+              class="login-signup-input domain-auctions-input"
             />
           </div>
           {/* end search input */}
@@ -67,11 +71,11 @@ const Filters = () => {
               name="Speciality"
               value={Speciality}
               onChange={updateFilters}
-              class="company mt-2 pr-5 capitalize login-signup-input"
+              className="company mt-2 pr-5 capitalize login-signup-input domain-auctions-input !text-white"
             >
               {Companies.map((c, index) => {
                 return (
-                  <option key={index} value={c}>
+                  <option key={index} value={c} className="!text-white">
                     {c}
                   </option>
                 );
@@ -80,9 +84,38 @@ const Filters = () => {
           </div>
           {/* end of companies */}
 
+          <form
+          // className="label-style"
+          >
+            <label htmlFor="sort" class="paragraph form-control">
+              <h5>sort by&nbsp;&nbsp; &nbsp;&nbsp;</h5>
+            </label>
+            <select
+              name="sort"
+              id="sort"
+              className="sort-input"
+              class="login-signup-input domain-auctions-input !text-white"
+              value={sort}
+              onChange={updateSort}
+            >
+              <option value="price-lowest" class="paragraph">
+                price (lowest)
+              </option>
+              <option value="price-highest" class="paragraph">
+                price (highest)
+              </option>
+              <option value="name-a" class="paragraph">
+                name (a-z)
+              </option>
+              <option value="name-z" class="paragraph">
+                name (z-a)
+              </option>
+            </select>
+          </form>
+
           {/* price */}
           <div className="form-control mb-0 price-below-part">
-            <h5>Price Below: </h5>
+            <h5>Price Below </h5>
             <p className="price">{Price}</p>
 
             <input
@@ -126,7 +159,7 @@ const Wrapper = styled.section`
       font-weight: 800;
       text-transform: uppercase;
       font-family: "Mukta", sans-serif;
-      color: var(--text-primary);
+      color: var(--text-white);
       margin-top: 25px;
     }
   }
@@ -158,7 +191,7 @@ const Wrapper = styled.section`
     letter-spacing: var(--spacing);
     cursor: pointer;
     font-family: "Mukta", sans-serif;
-    color: var(--text);
+    color: var(--text-white);
     font-size: 16px;
   }
   .active {
@@ -214,7 +247,7 @@ const Wrapper = styled.section`
     font-weight: 800;
     font-size: 18px;
     font-family: "Mukta", sans-serif;
-    color: var(--text);
+    color: var(--text-white);
   }
   .shipping {
     display: grid;
@@ -245,7 +278,7 @@ const Wrapper = styled.section`
     border-radius: 10px;
     padding: 7px 15px;
     top: 100px;
-    background: var(--secondary-bg);
+    background: var(--pent-bg);
   }
 
   @media (min-width: 768px) {

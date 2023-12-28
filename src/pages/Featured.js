@@ -15,7 +15,7 @@ function Featured() {
           <Filters />
 
           <div>
-            <Sort />
+            {/* <Sort /> */}
             <ProductList />
           </div>
         </div>

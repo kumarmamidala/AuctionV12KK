@@ -255,6 +255,18 @@
   border-bottom-right-radius: 8px;
 }
 
+.domain-auctions-input {
+  border: 1px solid white !important;
+}
+
+.domain-auctions-input::placeholder {
+  color: white;
+}
+
+.domain-auctions-input:focus {
+  color: white;
+}
+
 @media only screen and (min-width: 1910px) {
   .popup-content {
     width: 45% !important;
