@@ -218,7 +218,6 @@ body {
 }
 
 .title-gold {
-
   font-size: 35px !important;
   /* text-transform: uppercase; */
   font-weight: bold;
@@ -227,7 +226,6 @@ body {
 }
 
 .title1 {
-
   font-size: 35px !important;
   /* text-transform: uppercase; */
   font-weight: bold;
@@ -359,6 +357,10 @@ body {
 
   .t-padding {
     padding: 0px 20px;
+  }
+
+  .section-center {
+    flex-direction: column;
   }
 }
 

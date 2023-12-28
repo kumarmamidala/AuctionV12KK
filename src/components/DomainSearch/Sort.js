@@ -13,7 +13,22 @@ const Sort = () => {
   } = useFilterContext();
   return (
     <Wrapper>
-      <div className="btnn-container ">
+      <div className=" auction-price-card1 auction-price-card-tabs">
+        <div className="auction-product-left">
+          <div className="flex items-left text-left justify-between  flex-col name-div heading !text-white">
+            Domain
+          </div>
+          <div className="premium-div heading text-white">
+            <span>Category</span>
+          </div>
+          <div className="bid-div heading text-white">Bids</div>
+          <div className="last-date-div time-left heading text-white">
+            Time Left
+          </div>
+          <div className="price-div heading text-white">Price</div>
+        </div>
+      </div>
+      {/* <div className="btnn-container ">
         <button
           type="button"
           className={`${grid_view ? "active" : null}`}
@@ -48,27 +63,22 @@ const Sort = () => {
             name (z-a)
           </option>
         </select>
-      </form>
+      </form> */}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
-  display: grid;
   grid-template-columns: auto auto 1fr auto;
   align-items: center;
-  border-radius: 10px;
   margin-top: 0px;
   position: sticky;
   top: 100px;
   z-index: 99;
-  padding-right: 9px;
-  padding: 8px 10px;
-  background: var(--secondary-bg);
   box-shadow: 0px -21px 0px 10px var(--primary-bg);
-  margin-bottom: 2rem;
   column-gap: 2rem;
-  border: 0.5px solid #8080802e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
   .label-style {
     width: 100%;

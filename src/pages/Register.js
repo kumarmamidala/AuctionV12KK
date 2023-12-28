@@ -4,6 +4,7 @@ import Signup from "../components/Login/Signup";
 import TopBar from "../components/TopBar";
 import background from "./../components/Hero/media/Two4.png";
 import Footerr from "../components/Footerr/Footerr";
+import ContactSec from "../components/Profile/ContactSec";
 
 function Register() {
   return (
@@ -11,6 +12,7 @@ function Register() {
       <TopBar />
       {/* <HeroOther title="SIGN UP" background_image={background} /> */}
       <Signup />
+      <ContactSec />
       <Footerr />
     </div>
   );

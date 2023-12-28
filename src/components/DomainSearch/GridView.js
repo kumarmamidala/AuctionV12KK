@@ -6,7 +6,7 @@ const GridView = ({ products }) => {
   return (
     <Wrapper>
       <div className="products-container">
-        <div className=" auction-price-card1 auction-price-card-tabs">
+        {/* <div className=" auction-price-card1 auction-price-card-tabs">
           <div className="auction-product-left">
             <div className="flex items-left text-left justify-between  flex-col name-div heading !text-white">
               Domain
@@ -20,7 +20,7 @@ const GridView = ({ products }) => {
             </div>
             <div className="price-div heading text-white">Price</div>
           </div>
-        </div>
+        </div> */}
         {products.map((product) => {
           return <Product key={product.id} {...product} />;
         })}

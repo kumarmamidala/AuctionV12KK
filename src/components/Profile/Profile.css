@@ -587,7 +587,8 @@ li {
 .profile-contact-sec {
   position: relative;
   z-index: 99;
-  background: var(--tertiary-bg);
+  background: var(--quad-bg);
+  padding: 20px;
 }
 
 .activity-card {

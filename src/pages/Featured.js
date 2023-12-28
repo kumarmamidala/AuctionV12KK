@@ -12,10 +12,12 @@ function Featured() {
       <TopBar />
       <Wrapper>
         <div className="section-center products">
-          <Filters />
+          <div className="filter-div">
+            <Filters />
+          </div>
 
-          <div>
-            {/* <Sort /> */}
+          <div className="products-div">
+            <Sort />
             <ProductList />
           </div>
         </div>
@@ -29,7 +31,7 @@ function Featured() {
 
 const Wrapper = styled.div`
   .products {
-    display: grid;
+    display: flex;
     gap: 3rem 1.5rem;
   }
   @media screen and (min-width: 1910px) {

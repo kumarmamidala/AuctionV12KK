@@ -26,7 +26,6 @@ const Filters = () => {
   return (
     <Wrapper>
       <div className="contentfilter">
-        <p class="!font-bold paragraph ">{products.length} products found</p>
         <form onSubmit={(e) => e.preventDefault()} className="">
           {/* search input */}
           <div className="form-control">
@@ -40,6 +39,9 @@ const Filters = () => {
               class="login-signup-input domain-auctions-input"
             />
           </div>
+          <p class="!font-bold paragraph !text-white mt-[10px]">
+            {products.length} products found
+          </p>
           {/* end search input */}
           {/* categories */}
           <div className="form-control">

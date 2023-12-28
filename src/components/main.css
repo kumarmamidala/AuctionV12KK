@@ -390,6 +390,17 @@ body {
   animation: marquee1 15s linear infinite; /* Adjust the animation duration as needed */
 }
 
+.filter-div {
+  width: 240px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.products-div {
+  width: calc(100% - 240px);
+}
+
 @keyframes marquee1 {
   0% {
     transform: translateX(100%);
@@ -445,5 +456,9 @@ body {
   .mobile-profile {
     display: flex;
     flex-direction: column;
+  }
+
+  .products-div {
+    width: 100%;
   }
 }
