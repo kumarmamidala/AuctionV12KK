@@ -222,7 +222,7 @@ body {
   font-size: 35px !important;
   /* text-transform: uppercase; */
   font-weight: bold;
-  color: var(--text) !important;
+  color: var(--text);
   text-align: left;
 }
 

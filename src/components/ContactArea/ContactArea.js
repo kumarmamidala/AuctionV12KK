@@ -19,7 +19,7 @@ const ContactArea = (props) => {
         <div className="container container1">
           <div className="col-12">
             <div className="section-title text-center">
-              <h2 class="title-gold text-center">Let’s Talk</h2>
+              <h2 class="title-gold text-center !text-white">Let’s Talk</h2>
             </div>
           </div>
           <div className="row">
