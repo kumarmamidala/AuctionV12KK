@@ -143,7 +143,7 @@ const Product = ({
                   </Link> */}
               </div>
               <div className="premium-div">
-                <p>PREMIUM</p>
+                <p>Premium</p>
               </div>
               <div className="bid-div">
                 <span className="font-bold text-pent">
