@@ -167,7 +167,7 @@ hr {
   flex-direction: column-reverse;
 }
 .processAnimation h3 {
-  color: var(--text-primary);
+  color: var(--text-white);
   /* text-decoration: underline; */
   position: absolute;
   font-size: 22px !important;
@@ -196,7 +196,7 @@ hr {
   text-align: center;
   opacity: 0;
   transition: all 0.5s ease;
-  color: var(--text) !important;
+  color: var(--text-white) !important;
 }
 .aniItemRight:hover .processAnimationText > h3 {
   bottom: 55%;
@@ -234,7 +234,7 @@ hr {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-  color: var(--text-primary);
+  color: var(--text-white);
 }
 .blue {
   border-color: var(--color-blue);
@@ -269,7 +269,7 @@ hr {
   height: 50px;
   transform: rotateY(75deg);
   margin: 10px;
-  color: var(--text);
+  color: var(--text-white);
   transition: all 0.5s ease;
 }
 

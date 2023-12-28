@@ -350,10 +350,12 @@ body {
   border-left: 4px solid var(--text-gold);
   display: flex;
   transition: all 500ms ease-in-out;
+  height: fit-content;
+  min-height: 100px;
 }
 
 .trending-div.scrolled-div {
-  right: -247px;
+  right: -232px;
   transition: all 500ms ease-in-out;
 }
 
@@ -363,6 +365,7 @@ body {
 
 .bid-now-div {
   transform: rotateZ(270deg);
+  margin-right: -20px;
 }
 
 .bid-now-div-btn {
