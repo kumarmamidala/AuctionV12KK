@@ -116,6 +116,27 @@ function ProductDetail(props) {
             <div className="ProductDetail-left">
               <div className="detailed-explanation-part">
                 <div className={` content-container ${isAuth ? "" : "blur"}`}>
+                  <div className="domain-name-div">
+                    <h1>DOMAIN NAME</h1>
+                    <div>
+                      <label>Currency</label>
+                      <select>
+                        <option>INR</option>
+                        <option>USD</option>
+                      </select>
+                    </div>
+                  </div>
+                  <h1 className="title">{thisProduct.Name}</h1>
+                  <p className="paragraph">
+                    {" "}
+                    {thisProduct.Name} is catchy and attention grabbing, thus
+                    easy to remember and recall.
+                  </p>
+                  <div className="specialty-chips">
+                    <h1>Domain</h1>
+                    <h1>Business</h1>
+                    <h1>Premium</h1>
+                  </div>
                   <div>
                     <h1 className="heading my-4 heading-left-border-gold">
                       Specialities of .Gold
@@ -211,16 +232,6 @@ function ProductDetail(props) {
                       <Accordion.Header class="heading">
                         {" "}
                         <BsFillPersonFill />
-                        {/* <i
-                      class="fa fa-user"
-                      aria-hidden="true"
-                      style={{
-                        marginRight: '5px',
-                        fontSize: '30px',
-                        cursor: 'pointer',
-                        color: '#fbcb04',
-                      }}
-                    ></i> */}
                         &nbsp;
                         <span class="heading-gold">
                           Standout From The Competitors
@@ -243,16 +254,6 @@ function ProductDetail(props) {
                       <Accordion.Header class="heading">
                         {" "}
                         <BsFillFileTextFill />
-                        {/* <i
-                      className="fa fa-file-text-o"
-                      style={{
-                        marginRight: '5px',
-                        fontSize: '30px',
-                        cursor: 'pointer',
-                        color: '#fbcb04',
-                      }}
-                      aria-hidden="true"
-                    ></i> */}
                         &nbsp;
                         <span class=" heading-gold !text-[#fbcb04]">
                           Improves Online Visibility
@@ -373,8 +374,6 @@ function ProductDetail(props) {
                       </div>
                     </div>
                   </div>
-
-                  <div className="grid grid-cols-12 gap-4"></div>
                 </div>
                 {!isAuth ? (
                   <div className="login-request ">

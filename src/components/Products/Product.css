@@ -122,6 +122,24 @@ ol.circled li {
   /* padding: 0vh 5vw; */
 }
 
+.domain-name-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialty-chips {
+  display: flex;
+  gap: 10px;
+}
+
+.specialty-chips h1 {
+  padding: 6px 10px;
+  border-radius: 30px;
+  border: 1px solid var(--text-primary);
+}
+
 @media only screen and (min-width: 1910px) {
   .checkout-ProductDetail {
     /* padding: 0vh 5vw; */
