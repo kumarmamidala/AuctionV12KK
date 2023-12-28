@@ -159,3 +159,17 @@ body {
 .backface-invisible {
   backface-visibility: hidden;
 }
+
+.car-sel {
+  color: black;
+  font-size: 20px;
+}
+.awssld {
+  height: 32px !important;
+}
+.awssld__content {
+  background-color: white !important;
+}
+.awssld__timer {
+  --timer-height: 2px !important;
+}

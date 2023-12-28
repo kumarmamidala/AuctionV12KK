@@ -15,17 +15,15 @@ import Shapes from "../components/Shapes/Shapes";
 import Footerr from "../components/Footerr/Footerr";
 import { Link } from "react-router-dom";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
 
 import $ from "jquery";
 
 function Home() {
   const productss = useContext(ProductContext);
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   useEffect(() => {
     $(window).on("scroll", function () {
@@ -35,16 +33,6 @@ function Home() {
     });
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    arrows: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    pauseOnHover: true,
-  };
   return (
     <div className="flex flex-col max-w-10xl mx-auto scroll-smooth home-main-div">
       <TopBar />
@@ -59,9 +47,6 @@ function Home() {
       <ExperienceCard />
       <Process />
 
-      {/* <StepsLine /> */}
-      {/* <ContainerSoldItem data={ProductData} /> */}
-      {/* <ContainerCurrentlyListed data={ProductData} /> */}
       <Discover />
       <Questions data={DataHomeQuestions} />
       <Footerr />
@@ -72,24 +57,16 @@ function Home() {
         <div className="trending-domains12">
           <h1 className="heading">Trending Domains</h1>
           {/* <Trending Domains Component here /> */}
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1} // Set to 1 to show only one slide at a time
-            autoplay={{ delay: 500, disableOnInteraction: true }}
+          <AutoplaySlider
+            play={true}
+            cancelOnInteraction={false} // should stop playing on user interaction
+            interval={2000}
+            organicArrows={false}
+            bullets={false}
           >
             {productss &&
-              productss.slice(0, 4).map((item, idx) => (
-                <SwiperSlide key={item?.ID}>
-                  {/* Adjust the content inside the slider as needed */}
-                  <h1>{item.Name}</h1>
-                </SwiperSlide>
-              ))}
-          </Swiper>
-
-          {/* Add more slides as needed */}
-          {/* <p className="paragrpah">bishallmark.gold</p>
-          <p className="paragrpah">tanishq.gold</p>
-          <p className="paragrpah">bsk.gold</p> */}
+              productss.slice(0, 4).map((item, idx) => <div className="car-sel">{item.Name}</div>)}
+          </AutoplaySlider>
         </div>
       </div>
     </div>
