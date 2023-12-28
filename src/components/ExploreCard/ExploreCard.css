@@ -1,12 +1,19 @@
 .explore-section {
-  padding: 9rem 7rem 3rem 7rem;
-  background: var(--secondary-bg);
+  padding: 8rem 6rem 4rem 6rem;
+  background: var(--primary-bg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
   z-index: 2;
   position: relative;
+}
+
+.explore-inner-div {
+  display: flex;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 50px;
 }
 
 .explore-ul {

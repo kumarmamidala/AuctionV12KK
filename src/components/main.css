@@ -343,7 +343,7 @@ body {
   right: 0px;
   bottom: 30px;
   background: white;
-  padding: 20px 20px 20px 5px;
+  padding: 10px 20px 10px 10px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 0px 0px 4px grey;
@@ -355,7 +355,7 @@ body {
 }
 
 .trending-div.scrolled-div {
-  right: -232px;
+  right: -220px;
   transition: all 500ms ease-in-out;
 }
 
@@ -365,13 +365,15 @@ body {
 
 .bid-now-div {
   transform: rotateZ(270deg);
-  margin-right: -20px;
+  margin-right: -47px;
+  margin-left: 15px;
 }
 
 .bid-now-div-btn {
   background: #fbcb04;
-  padding: 4px 10px;
+  padding: 10px 12px;
   border-radius: 8px;
+  font-size: 18px;
 }
 
 .home-main-div {
