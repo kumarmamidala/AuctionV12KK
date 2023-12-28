@@ -46,8 +46,8 @@ function Main() {
                 </div>
 
                 <div className="processAnimationText">
-                  <h3 class="heading-sub ">Unique </h3>
-                  <p class="paragraph">
+                  <h3 class="heading-sub text-white">Unique </h3>
+                  <p class="paragraph !text-white">
                     Unique, memorable .gold extensions are perfect for your gold
                     based businesses.
                   </p>
