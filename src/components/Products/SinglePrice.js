@@ -86,7 +86,7 @@ function SinglePrice(props) {
     }
   };
   return (
-    <div>
+    <div className="p-[20px] pt-0">
       <div className="col-span-12 lg:col-span-4 lg:mt-4">
         <div className="relative -top-15">
           <div className="w-full mx-auto rounded-lg">

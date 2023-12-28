@@ -22,6 +22,9 @@ import main_product from "./media/sampleauctionimg.jpeg";
 import loader from "./../Cards/loader-timer-main.gif";
 import Footerr from "../Footerr/Footerr";
 import { AuthContext } from "../../Context/AuthContextProvider";
+
+import tuner from "./media/Tuners.jpeg";
+
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
@@ -132,246 +135,84 @@ function ProductDetail(props) {
                     {thisProduct.Name} is catchy and attention grabbing, thus
                     easy to remember and recall.
                   </p>
-                  <div className="specialty-chips">
+                  <div className="specialty-chips ">
                     <h1>Domain</h1>
                     <h1>Business</h1>
                     <h1>Premium</h1>
                   </div>
-                  <div>
-                    <h1 className="heading my-4 heading-left-border-gold">
-                      Specialities of .Gold
-                    </h1>
-
-                    <ol className="circled paragraph">
-                      <li>
-                        <span class="heading-sub !text-black">
-                          {thisProduct.Name} gives boost to your brand{" "}
-                        </span>{" "}
-                        <br />
-                        <span class="paragraph !text-black">
-                          {thisProduct.Name} is catchy and attention grabbing,
-                          thus easy to remember and recall. .Gold is a unique,
-                          recognizition giving extension for a gold based
-                          business. Hence, {thisProduct.Name} gives your brand
-                          enough boost by giving an online presence.{" "}
-                        </span>
-                      </li>
-                      <li>
-                        <span class="heading-sub !text-black">
-                          {thisProduct.Name} is right for you.
-                        </span>
-                        <br />
-                        <span class="paragraph !text-black">
-                          The post-pandemic world is digital based. Online
-                          presence is a basic need for any business now.
-                          Likewise, a gold based business also needs existence
-                          over the internet. And, .gold differentiates you from
-                          rest of the businesses. Thus, {thisProduct.Name} is
-                          the right choice for you.
-                        </span>
-                      </li>
-                      <li>
-                        <span class="heading-sub !text-black">
-                          {thisProduct.Name} benefits you.
-                        </span>
-                        <br />
-                        <span class="paragraph !text-black">
-                          "Your gold business can reach people present in remote
-                          areas as well." You can showcase your products
-                          creatively, and in a way that isn't possible to do in
-                          a physical store. You can mention the tiniest details
-                          of your products, and the customers will have all the
-                          time they need to choose the right product for
-                          themselves.
-                        </span>
-                      </li>
-                    </ol>
+                  <div className="specialty-chips-two">
+                    <div>
+                      <h1 className="heading !text-[grey]">Age</h1>
+                      <p className="paragraph">19 years</p>
+                    </div>
+                    <div>
+                      <h1 className="heading !text-[grey]">Expires</h1>
+                      <p className="paragraph">9 months</p>
+                    </div>
+                    <div>
+                      <h1 className="heading !text-[grey]">Registrar</h1>
+                      <p className="paragraph">Epik, Inc.</p>
+                    </div>
                   </div>
-                  <Accordion
-                    defaultActiveKey={["0"]}
-                    alwaysOpen
-                    className="accordion"
-                  >
-                    <Accordion.Item eventKey="0" className="accordion_item">
-                      <Accordion.Header
-                        className="accordion_header heading "
-                        style={{
-                          primaryColor: "#F3852E",
-                          backgroundColor: "white",
-                          fontSize: "24px",
-                        }}
-                      >
-                        {" "}
-                        <FaGlobe />
-                        {/* <i
-                      className="fa fa-globe"
-                      style={{
-                        marginRight: '5px',
-                        fontSize: '30px',
-                        cursor: 'pointer',
-                        color: '#fbcb04',
-                      }}
-                      aria-hidden="true"
-                    ></i> */}
-                        &nbsp; Top Level Domains
-                      </Accordion.Header>
-                      <Accordion.Body class="paragraph p-4">
-                        <span class="paragraph p-4 !text-black">
-                          The .gold top-level domain (TLD) is a new and unique
-                          way to establish an online presence for businesses and
-                          individuals related to the gold industry. It provides
-                          a clear and specific message to the customers that the
-                          website is related to gold, whether it's a gold
-                          investment firm, a gold jewelry store, a gold mining
-                          company or a gold-themed hotel.{" "}
-                        </span>
-                      </Accordion.Body>
-                    </Accordion.Item>
-
-                    <Accordion.Item eventKey="1" className="accordion_item">
-                      <Accordion.Header class="heading">
-                        {" "}
-                        <BsFillPersonFill />
-                        &nbsp;
-                        <span class="heading-gold">
-                          Standout From The Competitors
-                        </span>
-                      </Accordion.Header>
-                      <Accordion.Body class="paragraph p-4">
-                        <span class="paragraph p-4 !text-black">
-                          Using .gold TLD can help businesses and individuals in
-                          the gold industry to stand out from their competitors,
-                          as it can be used to create a memorable and
-                          easy-to-remember website address. For example, a gold
-                          jewelry store could have a website address like
-                          "jewelry.gold" which is more memorable and relevant
-                          than "jewelry.com"{" "}
-                        </span>
-                      </Accordion.Body>
-                    </Accordion.Item>
-
-                    <Accordion.Item eventKey="2" className="accordion_item">
-                      <Accordion.Header class="heading">
-                        {" "}
-                        <BsFillFileTextFill />
-                        &nbsp;
-                        <span class=" heading-gold !text-[#fbcb04]">
-                          Improves Online Visibility
-                        </span>
-                      </Accordion.Header>
-                      <Accordion.Body class="paragraph p-4">
-                        <span class="paragraph p-4 !text-black">
-                          In addition, .gold TLD can help customers to find the
-                          gold-related website they are looking for easily, by
-                          searching the domain name they are looking for.
-                          Overall, using .gold TLD can provide a clear and
-                          specific message to the customers, increase the online
-                          visibility of the gold-related businesses, and help
-                          them to stand out from their competitors.{" "}
-                        </span>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </Accordion>
-                  <div>
-                    <h1 className="heading mt-4 heading-left-border-gold">
-                      .Gold at a glance.
+                  <div className="bid-history-div">
+                    <h1 className="heading text-black mt-[20px] text-left">
+                      Bid history
                     </h1>
-                    <ol className="why-gold-ol paragraph ">
-                      <li class="paragraph !text-black">Unique</li>
-                      <li class="paragraph !text-black">Memorable</li>
-                      <li class="paragraph !text-black">Grabs attention</li>
-                      <li class="paragraph !text-black">
-                        Gives right recognition
-                      </li>
-                      <li class="paragraph !text-black">
-                        Tells users - who you are, what you do{" "}
-                      </li>
-                      <li class="paragraph !text-black">
-                        Reduces your marketing budget{" "}
-                      </li>
-                      <li class="paragraph !text-black">
-                        Instantly affiliates you with gold products, and
-                        services{" "}
-                      </li>
-                    </ol>
-                  </div>
-
-                  <div>
-                    <h1 className="heading mt-4 heading-left-border-gold">
-                      Its not .com anymore
-                    </h1>
-                    <p class="paragraph !text-black">
-                      "With the rise of internet, every business is eyeing for
-                      distinctiveness. .in, biz, .org, .net, etc are some of the
-                      rising extensions. Likewise, .gold is also rising and has
-                      so much potential."
-                    </p>
-                  </div>
-                  <div>
-                    <h1 className="heading mt-4 heading-left-border-gold">
-                      Own a .gold domain extension today.
-                    </h1>
-                    <p class="paragraph !text-black">
-                      "In our servey of gold based businesses, we found that
-                      many jewellery shops, miners, importers, exporters, etc
-                      are already having a website or thinking to get one. This
-                      reflects the need of online presence. Time is of essence.
-                      If you own a gold based business, and do not have a
-                      website, understand what your competition is adapting.
-                      Equip your business with the .gold extension today and
-                      stand out with the competition."
-                    </p>
-                  </div>
-                  <h1 class="heading mt-4 heading-left-border-gold">
-                    .Gold Auctions Offers:
-                  </h1>
-                  <div className="border-top border-bottom container py-5 my-5">
-                    <div className="row g-3">
-                      <div className="col-md-4 text-center">
-                        <i className="color-[#fbcb04] flex justify-center">
-                          <MdSecurity
-                            className="text-primary"
-                            size="40px"
-                            style={{ top: "20px" }}
+                    <div class="bid-history-section-detailed !text-black">
+                      {loadBidHistory ? (
+                        <div>
+                          <img
+                            src={loader}
+                            alt=""
+                            className="bid-history-loader-img"
                           />
-                        </i>
-                        <h2 className="heading-sub !text-black">
-                          Secure payment
-                        </h2>
-                        <p class="paragraph !text-black">
-                          Your details are protected by SSL encryption
-                        </p>
-                      </div>
-                      <div className="col-md-4 text-center">
-                        <i className="color-[#fbcb04] flex justify-center">
-                          <MdOutlineCheckCircle
-                            className="text-primary"
-                            size="40px"
-                            style={{ top: "20px" }}
-                          />
-                        </i>
-                        <h2 className="heading-sub !text-black">
-                          Easy transfers
-                        </h2>
-                        <p class="paragraph !text-black">
-                          Our support team manages the transfer for you
-                        </p>
-                      </div>
-                      <div className="col-md-4 text-center">
-                        <i className="color-[#fbcb04] flex justify-center">
-                          <MdLockOutline
-                            className="text-primary"
-                            size="40px"
-                            style={{ top: "20px" }}
-                          />
-                        </i>
-                        <h2 className="heading-sub !text-black">
-                          Buyer guarantee
-                        </h2>
-                        <p class="paragraph !text-black">
-                          Receive the domain or get your money back
-                        </p>
-                      </div>
+                          <p className="paragraph text-center text-black">
+                            Loading bid history, please wait...
+                          </p>
+                        </div>
+                      ) : (
+                        <div>
+                          {bidHistory.length === 0 ? (
+                            <p>
+                              No one has bid this product yet. <br />
+                              Be the first one and grab it.
+                            </p>
+                          ) : (
+                            <div className="relative">
+                              <div class="paragraph text-left !text-black bid-history-item flex justify-between bid-history-tags">
+                                <p class="bidder-name text-white !text-[20px]">
+                                  Bidder
+                                </p>
+                                <p class="bid-amount  text-white !text-[20px]">
+                                  Amount
+                                </p>
+                                <p class="bid-time  text-white !text-[20px]">
+                                  Time
+                                </p>
+                              </div>
+                              <div>
+                                <ul className="bid-box">
+                                  {bidHistory.map((bid, index) => (
+                                    <Fade bottom>
+                                      <li key={index}>
+                                        <div class="paragraph text-left !text-black bid-history-item-detailed flex justify-between">
+                                          <p class="bidder-name">
+                                            {bid.bidder_name}
+                                          </p>
+                                          <p class="bid-amount">
+                                            Rs.{bid.bid_amount}
+                                          </p>
+                                          <p class="bid-time">{bid.bid_time}</p>
+                                        </div>
+                                      </li>
+                                    </Fade>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -405,50 +246,8 @@ function ProductDetail(props) {
             </div>
 
             <div className="ProductDetail-right">
+              <img src={tuner} alt="" />
               <SinglePrice />
-              <hr className="w-full mt-[20px]" />
-              <h1 className="heading text-black mt-[20px] text-left">
-                Bid history
-              </h1>
-              <div class="bid-history-section !text-black">
-                {loadBidHistory ? (
-                  <div>
-                    <img
-                      src={loader}
-                      alt=""
-                      className="bid-history-loader-img"
-                    />
-                    <p className="paragraph text-center text-black">
-                      Loading bid history, please wait...
-                    </p>
-                  </div>
-                ) : (
-                  <div>
-                    {bidHistory.length === 0 ? (
-                      <p>
-                        No one has bid this product yet. <br />
-                        Be the first one and grab it.
-                      </p>
-                    ) : (
-                      <ul>
-                        {bidHistory.map((bid, index) => (
-                          <Fade bottom>
-                            <li key={index}>
-                              <div class="paragraph text-left !text-black bid-history-item">
-                                <p class="w-full">{bid.bidder_name}</p>
-                                <div className="flex justify-between">
-                                  <p class="">Rs.{bid.bid_amount}</p>
-                                  <p class="">{bid.bid_time}</p>
-                                </div>
-                              </div>
-                            </li>
-                          </Fade>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                )}
-              </div>
             </div>
           </div>
         </div>

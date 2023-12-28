@@ -44,15 +44,48 @@
   overflow: scroll;
 }
 
+.bid-history-section-detailed {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  height: 276px;
+  overflow: scroll;
+}
+
 .bid-history-item {
-  box-shadow: 0px 0px 4px grey;
   border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 5px 15px;
+  /* margin-bottom: 20px; */
+  /* padding: 5px 15px; */
   width: 98%;
-  margin-left: 1%;
-  margin-top: 5px;
-  background: linear-gradient(45deg, #25cbd308, #0000ff0a);
+  /* margin-left: 1%; */
+  /* margin-top: 5px; */
+}
+
+.bid-history-item-detailed {
+  border-radius: 6px;
+  width: 100%;
+}
+.bid-history-item-detailed .bidder-name,
+.bid-history-item-detailed .bid-time,
+.bid-history-item-detailed .bid-amount,
+.bid-history-tags .bidder-name,
+.bid-history-tags .bid-time,
+.bid-history-tags .bid-amount {
+  padding: 8px 10px;
+}
+
+.bid-history-item-detailed .bidder-name,
+.bid-history-tags .bidder-name {
+  height: unset;
+}
+
+.bid-box {
+  /* padding-top: 40px; */
+}
+
+.bid-box li:nth-child(odd) .bid-history-item-detailed {
+  background-color: #8080800f;
+  border-radius: 0px;
 }
 
 .bid-input {
