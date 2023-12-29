@@ -110,6 +110,8 @@ function ProductDetail(props) {
     return null;
   }
 
+  console.log(thisProduct.Deadline);
+
   return (
     <div>
       <TopBar />
@@ -117,137 +119,146 @@ function ProductDetail(props) {
         <div className="checkout-ProductDetail ">
           <div className="checkout-body-ProductDetail">
             <div className="ProductDetail-left">
-              <div className="detailed-explanation-part">
-                <div className={` content-container ${isAuth ? "" : "blur"}`}>
-                  <div className="domain-name-div">
-                    <h1>DOMAIN NAME</h1>
-                    <div>
-                      <label>Currency</label>
-                      <select>
-                        <option>INR</option>
-                        <option>USD</option>
-                      </select>
-                    </div>
-                  </div>
-                  <h1 className="title">{thisProduct.Name}</h1>
-                  <p className="paragraph">
-                    {" "}
-                    {thisProduct.Name} is catchy and attention grabbing, thus
-                    easy to remember and recall.
-                  </p>
-                  <div className="specialty-chips ">
-                    <h1>Domain</h1>
-                    <h1>Business</h1>
-                    <h1>Premium</h1>
-                  </div>
-                  <div className="specialty-chips-two">
-                    <div>
-                      <h1 className="heading !text-[grey]">Age</h1>
-                      <p className="paragraph">19 years</p>
-                    </div>
-                    <div>
-                      <h1 className="heading !text-[grey]">Expires</h1>
-                      <p className="paragraph">9 months</p>
-                    </div>
-                    <div>
-                      <h1 className="heading !text-[grey]">Registrar</h1>
-                      <p className="paragraph">Epik, Inc.</p>
-                    </div>
-                  </div>
-                  <div className="bid-history-div">
-                    <h1 className="heading text-black mt-[20px] text-left">
-                      Bid history
+              {!isAuth ? (
+                <div className="login-request ">
+                  <div className="login-request-content">
+                    <h1 className="login-request-heading !text-[20px]">
+                      Please login to view the details of {thisProduct.Name}
                     </h1>
-                    <div class="bid-history-section-detailed !text-black">
-                      {loadBidHistory ? (
-                        <div>
-                          <img
-                            src={loader}
-                            alt=""
-                            className="bid-history-loader-img"
-                          />
-                          <p className="paragraph text-center text-black">
-                            Loading bid history, please wait...
-                          </p>
-                        </div>
-                      ) : (
-                        <div>
-                          {bidHistory.length === 0 ? (
-                            <p>
-                              No one has bid this product yet. <br />
-                              Be the first one and grab it.
+                    <br />
+                    <Link
+                      to="/login"
+                      className="red-btn !px-[20px] !py-[0px] !m-0"
+                    >
+                      Login
+                    </Link>
+                    <br />
+
+                    <p className="mt-[20px]">
+                      Do not have an account?{" "}
+                      <span>
+                        <Link to="/signup" className="text-primary">
+                          SignUp
+                        </Link>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="detailed-explanation-part">
+                  <div className={` content-container ${isAuth ? "" : "blur"}`}>
+                    <div className="domain-name-div">
+                      <h1>DOMAIN NAME</h1>
+                      <div>
+                        <label>Currency</label>
+                        <select className="currency-dropdown">
+                          <option>INR</option>
+                          <option>USD</option>
+                        </select>
+                      </div>
+                    </div>
+                    <h1 className="title">{thisProduct.Name}</h1>
+                    <p className="paragraph">
+                      {" "}
+                      {thisProduct.Name} is catchy and attention grabbing, thus
+                      easy to remember and recall.
+                    </p>
+                    <div className="specialty-chips ">
+                      <h1>Domain</h1>
+                      <h1>Business</h1>
+                      {thisProduct.Premium ? <h1>Premium</h1> : null}
+
+                      <h1>{thisProduct.Company}</h1>
+                      <h1>{thisProduct.Category}</h1>
+                    </div>
+                    <div className="specialty-chips-two">
+                      <div>
+                        <h1 className="heading !text-[grey]">Age</h1>
+                        <p className="paragraph">19 years</p>
+                      </div>
+                      <div>
+                        <h1 className="heading !text-[grey]">Domain Expires</h1>
+                        <p className="paragraph">9 months</p>
+                      </div>
+                      <div>
+                        <h1 className="heading !text-[grey]">Registrar</h1>
+                        <p className="paragraph">Epik, Inc.</p>
+                      </div>
+                    </div>
+                    <div className="bid-history-div">
+                      <h1 className="heading text-black mt-[20px] text-left">
+                        Bid history
+                      </h1>
+                      <div class="bid-history-section-detailed !text-black">
+                        {loadBidHistory ? (
+                          <div>
+                            <img
+                              src={loader}
+                              alt=""
+                              className="bid-history-loader-img"
+                            />
+                            <p className="paragraph text-center text-black">
+                              Loading bid history, please wait...
                             </p>
-                          ) : (
-                            <div className="relative">
-                              <div class="paragraph text-left !text-black bid-history-item flex justify-between bid-history-tags">
-                                <p class="bidder-name text-white !text-[20px]">
-                                  Bidder
-                                </p>
-                                <p class="bid-amount  text-white !text-[20px]">
-                                  Amount
-                                </p>
-                                <p class="bid-time  text-white !text-[20px]">
-                                  Time
-                                </p>
+                          </div>
+                        ) : (
+                          <div>
+                            {bidHistory.length === 0 ? (
+                              <p>
+                                No one has bid this product yet. <br />
+                                Be the first one and grab it.
+                              </p>
+                            ) : (
+                              <div className="relative">
+                                <div class="paragraph text-left !text-black bid-history-item flex justify-between bid-history-tags">
+                                  <p class="bidder-name text-white !text-[20px]">
+                                    Bidder
+                                  </p>
+                                  <p class="bid-amount  text-white !text-[20px]">
+                                    Amount
+                                  </p>
+                                  <p class="bid-time  text-white !text-[20px]">
+                                    Time
+                                  </p>
+                                </div>
+                                <div>
+                                  <ul className="bid-box">
+                                    {bidHistory.map((bid, index) => (
+                                      <Fade bottom>
+                                        <li key={index}>
+                                          <div class="paragraph text-left !text-black bid-history-item-detailed flex justify-between">
+                                            <p class="bidder-name">
+                                              {bid.bidder_name}
+                                            </p>
+                                            <p class="bid-amount">
+                                              Rs.{bid.bid_amount}
+                                            </p>
+                                            <p class="bid-time">
+                                              {bid.bid_time}
+                                            </p>
+                                          </div>
+                                        </li>
+                                      </Fade>
+                                    ))}
+                                  </ul>
+                                </div>
                               </div>
-                              <div>
-                                <ul className="bid-box">
-                                  {bidHistory.map((bid, index) => (
-                                    <Fade bottom>
-                                      <li key={index}>
-                                        <div class="paragraph text-left !text-black bid-history-item-detailed flex justify-between">
-                                          <p class="bidder-name">
-                                            {bid.bidder_name}
-                                          </p>
-                                          <p class="bid-amount">
-                                            Rs.{bid.bid_amount}
-                                          </p>
-                                          <p class="bid-time">{bid.bid_time}</p>
-                                        </div>
-                                      </li>
-                                    </Fade>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      )}
+                            )}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
-                {!isAuth ? (
-                  <div className="login-request ">
-                    <div className="login-request-content">
-                      <h1 className="login-request-heading !text-[20px]">
-                        Please login to view the details of {thisProduct.Name}
-                      </h1>
-                      <br />
-                      <Link
-                        to="/login"
-                        className="red-btn !px-[20px] !py-[0px] !m-0"
-                      >
-                        Login
-                      </Link>
-                      <br />
-
-                      <p className="mt-[20px]">
-                        Do not have an account?{" "}
-                        <span>
-                          <Link to="/signup" className="text-primary">
-                            SignUp
-                          </Link>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                ) : null}
-              </div>
+              )}
             </div>
 
             <div className="ProductDetail-right">
-              <img src={tuner} alt="" />
-              <SinglePrice />
+              <img src={tuner} alt="" className="tuner-img" />
+              <SinglePrice
+                bidHistory={bidHistory}
+                deadline={thisProduct.Deadline}
+              />
             </div>
           </div>
         </div>

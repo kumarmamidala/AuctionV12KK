@@ -141,7 +141,7 @@ article.card-container__card:hover:after {
   width: fit-content;
   color: white;
   padding: 5px 20px;
-  border-radius: 30px;
+  border-radius: 8px;
   font-size: 18px;
   margin: 20px 0px;
   border: 2px solid transparent;

@@ -65,8 +65,9 @@
   gap: 10px;
   background: var(--text-quad);
   align-items: center;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 8px;
+  border: 2px solid var(--quad-bg);
 }
 
 .subscribe-btn:hover {

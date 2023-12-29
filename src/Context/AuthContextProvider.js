@@ -48,6 +48,7 @@ export default function AuthContextProvider({ children }) {
         localStorage.setItem("isAuth", JSON.stringify(true));
         localStorage.setItem("loginUser", JSON.stringify(user));
         toast.success("Login successful");
+        setTimeout(resetState, 60 * 60 * 1000);
       } else {
         toast.error("Provide correct login details");
       }

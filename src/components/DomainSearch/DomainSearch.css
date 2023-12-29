@@ -72,6 +72,7 @@
 .bid-history-tags .bid-time,
 .bid-history-tags .bid-amount {
   padding: 8px 10px;
+  font-size: 18px;
 }
 
 .bid-history-item-detailed .bidder-name,
@@ -140,7 +141,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background: var(--pent-bg);
-  padding: 15px 15px;
+  padding: 10px 15px;
 }
 
 .auction-price-card-tabs-home {
@@ -303,6 +304,10 @@
 
 .domain-auctions-input:focus {
   color: white;
+}
+
+.product-name:hover {
+  color: var(--text-pent);
 }
 
 @media only screen and (min-width: 1910px) {

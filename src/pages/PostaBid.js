@@ -3,6 +3,8 @@ import { useState } from "react";
 import TopBar from "../components/TopBar";
 import { ProductContext } from "../Context/products_context";
 import Footerr from "../components/Footerr/Footerr";
+import { Contacts } from "@mui/icons-material";
+import ContactSec from "../components/Profile/ContactSec";
 
 function PostaBid() {
   const [showModal] = useState(false);
@@ -13,7 +15,7 @@ function PostaBid() {
   return (
     <div>
       <TopBar />
-      <div class="bg-white pb-[40px] !pt-[80px] post-a-bid-part">
+      <div class="pb-[40px] !pt-[80px] post-a-bid-part">
         <div className="max-w-3xl mx-auto p-3  flex flex-col !items-center justify-center sm:p-12  rounded-md bg-white post-a-bid-box">
           <div className="text-3xl font-bold !mb-3   title">Post a Bid</div>
           <form className="flex flex-col  w-full">
@@ -118,7 +120,7 @@ function PostaBid() {
                     <textarea
                       placeholder="Enter description"
                       name="description"
-                      className="w-full min-h-[100px] p-3 rounded-md border   focus:outline-none focus:border-slate-500 mt-1 paragraph input-section"
+                      className="w-full min-h-[100px] p-3 rounded-md    focus:outline-none mt-1 paragraph input-section"
                     />
                   </label>
                 </div>
@@ -144,7 +146,7 @@ function PostaBid() {
           </form>
         </div>
       </div>
-
+      <ContactSec />
       <Footerr />
     </div>
   );

@@ -6,7 +6,7 @@ import { AuthContext } from "../../Context/AuthContextProvider";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
 
-function SinglePrice(props) {
+function SinglePrice({ bidHistory, deadline }) {
   const [productss, setProductss] = useState([]);
   const { isAuth, logoutme, loginUser } = useContext(AuthContext);
   const [bidAmount, setBidAmount] = useState("");
@@ -16,6 +16,34 @@ function SinglePrice(props) {
   const parsedProductId = parseInt(productId);
 
   const navigate = useNavigate();
+  const thisProduct = productss.find((prod) => prod.ID === parsedProductId);
+
+  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
+
+  useEffect(() => {
+    const timerInterval = setInterval(() => {
+      setTimeRemaining(getTimeRemaining());
+    }, 1000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(timerInterval);
+  }, []);
+
+  function getTimeRemaining() {
+    const now = new Date();
+    const deadlineDate = new Date(deadline);
+    const difference = deadlineDate - now;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    return { days, hours, minutes, seconds };
+  }
+
   useEffect(() => {
     fetch("https://auctionapi.shop/sam/doc/products/Availableproducts")
       .then((response) => response.json())
@@ -28,7 +56,6 @@ function SinglePrice(props) {
     return null;
   }
 
-  const thisProduct = productss.find((prod) => prod.ID === parsedProductId);
   if (!thisProduct) {
     console.log(`Product with ID ${parsedProductId} not found.`);
     return null;
@@ -85,6 +112,7 @@ function SinglePrice(props) {
       return navigate("/checkout");
     }
   };
+
   return (
     <div className="p-[20px] pt-0">
       <div className="col-span-12 lg:col-span-4 lg:mt-4">
@@ -99,14 +127,39 @@ function SinglePrice(props) {
                   >
                     {" "}
                     <form onSubmit={handleSubmit}>
-                      <span class="heading !text-black">
+                      {/* <span class="heading !text-black">
                         Bid for{" "}
                         <span class="text-primary">{thisProduct.Name}</span>
                       </span>
-                      <br /> <br />
-                      <span className="block mb-2 text-sm font-normal text-slate-200 heading !text-black">
-                        Current bid : ₹ {thisProduct.Highest_bid_amount}
+                      <br /> <br /> */}
+                      <span className="block mb-2 text-sm  text-slate-200  !font-thin text-[22px] !text-[grey]">
+                        Highest bid
+                        <br />
+                        <br />{" "}
+                        <span className="heading">
+                          ₹ {thisProduct.Highest_bid_amount}
+                        </span>
                       </span>
+                      <br />
+                      <hr className="!w-full" />
+                      {bidHistory.length === 0 ? (
+                        <p>
+                          No one has bid this product yet. <br />
+                          Be the first one and grab it.
+                        </p>
+                      ) : (
+                        <div className="paragraph">
+                          <br />
+                          <span className="text-pent">
+                            {bidHistory.length} bids
+                          </span>
+                          <br />
+                          {timeRemaining.days >= 1 ? (
+                            <span>{timeRemaining.days} days left</span>
+                          ) : null}
+                        </div>
+                      )}
+
                       <div className="m-auto  lg:w-full lg:mx-2 mb-4 lg:mb-0">
                         <label
                           for="email-address-icon"
@@ -153,7 +206,7 @@ function SinglePrice(props) {
                       <div className="md:mx-auto w-full lg:w-auto">
                         <button
                           type="submit"
-                          className="blue-btn   sm:w-auto  md:!w-full"
+                          className="blue-btn   sm:w-auto  md:!w-full !m-0"
                         >
                           {/* {!bidAmount ? "Place your bid" : "Submit"} */}
                           {isSubmitting ? (

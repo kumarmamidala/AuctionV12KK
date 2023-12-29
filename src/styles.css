@@ -136,7 +136,7 @@ body {
   border-radius: 4px;
   padding: 8px 10px;
   width: 100%;
-  background: var(--secondary-bg);
+  background: #cae9ff52;
 }
 
 .Stack-box {
@@ -468,6 +468,7 @@ body {
   position: relative;
   z-index: 2;
   padding-bottom: 50px;
+  background: var(--primary-bg);
 }
 
 .close {

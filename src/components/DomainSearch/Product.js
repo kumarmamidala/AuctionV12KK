@@ -131,7 +131,7 @@ const Product = ({
               <div className="flex items-left text-left justify-between  flex-col name-div ">
                 <Link
                   to={`/Marketplace/${ID}`}
-                  className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis heading"
+                  className=" whitespace-nowrap overflow-hidden text-ellipsis !font-thin text-[26px] product-name"
                 >
                   {Name}
                 </Link>
@@ -158,12 +158,13 @@ const Product = ({
                   {timeRemaining.minutes}m {timeRemaining.seconds}s
                 </span>
               </div>
-              <Link
-                to={`/Marketplace/${ID}`}
-                className="p-2 px-3 text-[24px] leading-3 font-bold  scale-90 hover:text-black price-div"
+              <div
+                className="p-2 px-3 text-[24px] leading-3 font-bold scale-90
+                hover:text-black price-div"
               >
+                {" "}
                 Rs. {Price}
-              </Link>
+              </div>
               <Popup
                 trigger={
                   <button className="custom-btn main-button place-a-bid-div">
