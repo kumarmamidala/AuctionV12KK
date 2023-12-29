@@ -325,6 +325,16 @@
   color: var(--text-pent);
 }
 
+.loading-comment {
+  background: white;
+  color: var(--text-pent);
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+  font-size: 22px;
+}
+
 @media only screen and (min-width: 1910px) {
   .popup-content {
     width: 45% !important;
