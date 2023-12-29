@@ -5,6 +5,7 @@ import { ProductContext } from "../../Context/products_context";
 import { AuthContext } from "../../Context/AuthContextProvider";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
+import toast from "react-hot-toast";
 
 function SinglePrice({ bidHistory, deadline }) {
   const [productss, setProductss] = useState([]);
@@ -62,7 +63,17 @@ function SinglePrice({ bidHistory, deadline }) {
   }
 
   const handleBidAmountChange = (event) => {
-    setBidAmount(event.target.value);
+    // setBidAmount(event.target.value);
+    const inputValue = event.target.value;
+
+    // Check if the input matches the pattern
+    if (/^\d*$/.test(inputValue)) {
+      setBidAmount(inputValue);
+    } else {
+      // If the pattern is not matched, show an alert and clear the input
+      alert("Please enter only numbers");
+      setBidAmount("");
+    }
   };
 
   const handleSubmit = (event) => {
@@ -74,7 +85,10 @@ function SinglePrice({ bidHistory, deadline }) {
 
     const minimumBid = parseInt(thisProduct.Highest_bid_amount) + 500;
     if (bidAmount < minimumBid) {
-      return alert(`Bid must be at least ${minimumBid}`);
+      setBidAmount("");
+      return alert(
+        `Bid amount for ${thisProduct.Name} must be at least Rs.${minimumBid}`
+      );
     }
     setIsSubmitting(true);
 
@@ -90,10 +104,20 @@ function SinglePrice({ bidHistory, deadline }) {
       .then((response) => {
         console.log(response);
         setIsSubmitting(false);
-        alert(response.data);
+        // alert(response.data);
+        alert(
+          "Congratulations " +
+            loginUser.username +
+            "! Your bid amount Rs." +
+            bidAmount +
+            " for " +
+            thisProduct.Name +
+            " is successful!"
+        );
+
         console.log(loginUser.user_id);
+
         window.location.reload();
-        // handle successful bid
       })
       .catch((error) => {
         console.log(error);
@@ -102,7 +126,7 @@ function SinglePrice({ bidHistory, deadline }) {
         // handle bid error
       });
   };
-  console.log(thisProduct);
+
   const handleSubmit2 = (event) => {
     event.preventDefault();
 
@@ -140,8 +164,8 @@ function SinglePrice({ bidHistory, deadline }) {
                           ₹ {thisProduct.Highest_bid_amount}
                         </span>
                       </span>
-                      <br />
-                      <hr className="!w-full" />
+
+                      <hr className="!w-full my-[20px]" />
                       {bidHistory.length === 0 ? (
                         <p>
                           No one has bid this product yet. <br />
@@ -149,7 +173,6 @@ function SinglePrice({ bidHistory, deadline }) {
                         </p>
                       ) : (
                         <div className="paragraph">
-                          <br />
                           <span className="text-pent">
                             {bidHistory.length} bids
                           </span>
@@ -172,6 +195,8 @@ function SinglePrice({ bidHistory, deadline }) {
                             type="text"
                             id="bidAmount"
                             name="bidAmount"
+                            pattern="\d*"
+                            title="Please enter only numbers"
                             placeholder={`Min bid is ${
                               parseInt(thisProduct.Highest_bid_amount) + 500
                             }`}
@@ -179,28 +204,6 @@ function SinglePrice({ bidHistory, deadline }) {
                             onChange={handleBidAmountChange}
                             className="border rounded-lg block w-full p-2.5 appearance-none focus-visible:outline-none focus-visible:bg-white focus-visible:text-[rgb(15,14,14)] "
                           />
-                          <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              fill="none"
-                              classNameName="absolute right-2 z-10 bg-white"
-                              viewBox="0 0 24 24"
-                            >
-                              <path fill="#fff" d="M0 0H24V24H0z"></path>
-                              <path
-                                stroke="#25cbd3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="1.5"
-                                d="M19.5 3.75h-15a.75.75 0 00-.75.75v15c0 .414.336.75.75.75h15a.75.75 0 00.75-.75v-15a.75.75 0 00-.75-.75zM16.5 2.25v3M7.5 2.25v3M4 8.25h16"
-                              ></path>
-                              <path fill="#BE9E57" d="M7 11H9V13H7z"></path>
-                              <path fill="#BE9E57" d="M11 11H13V13H11z"></path>
-                              <path fill="#BE9E57" d="M15 11H17V13H15z"></path>
-                            </svg>
-                          </div>
                         </div>
                       </div>
                       <div className="md:mx-auto w-full lg:w-auto">
@@ -208,7 +211,6 @@ function SinglePrice({ bidHistory, deadline }) {
                           type="submit"
                           className="blue-btn   sm:w-auto  md:!w-full !m-0"
                         >
-                          {/* {!bidAmount ? "Place your bid" : "Submit"} */}
                           {isSubmitting ? (
                             <div className="m-auto flex justify-center">
                               <ThreeDots

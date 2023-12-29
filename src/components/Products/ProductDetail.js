@@ -119,72 +119,89 @@ function ProductDetail(props) {
         <div className="checkout-ProductDetail ">
           <div className="checkout-body-ProductDetail">
             <div className="ProductDetail-left">
-              {!isAuth ? (
-                <div className="login-request ">
-                  <div className="login-request-content">
-                    <h1 className="login-request-heading !text-[20px]">
-                      Please login to view the details of {thisProduct.Name}
-                    </h1>
-                    <br />
-                    <Link
-                      to="/login"
-                      className="red-btn !px-[20px] !py-[0px] !m-0"
-                    >
-                      Login
-                    </Link>
-                    <br />
-
-                    <p className="mt-[20px]">
-                      Do not have an account?{" "}
-                      <span>
-                        <Link to="/signup" className="text-primary">
-                          SignUp
-                        </Link>
-                      </span>
-                    </p>
+              <div className="detailed-explanation-part">
+                <div className={` content-container `}>
+                  <div className="domain-name-div">
+                    <h1>DOMAIN NAME</h1>
+                    <div>
+                      <label>Currency</label>
+                      <select className="currency-dropdown">
+                        <option>INR</option>
+                        <option>USD</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <div className="detailed-explanation-part">
-                  <div className={` content-container ${isAuth ? "" : "blur"}`}>
-                    <div className="domain-name-div">
-                      <h1>DOMAIN NAME</h1>
-                      <div>
-                        <label>Currency</label>
-                        <select className="currency-dropdown">
-                          <option>INR</option>
-                          <option>USD</option>
-                        </select>
-                      </div>
-                    </div>
-                    <h1 className="title">{thisProduct.Name}</h1>
-                    <p className="paragraph">
-                      {" "}
-                      {thisProduct.Name} is catchy and attention grabbing, thus
-                      easy to remember and recall.
-                    </p>
-                    <div className="specialty-chips ">
-                      <h1>Domain</h1>
-                      <h1>Business</h1>
-                      {thisProduct.Premium ? <h1>Premium</h1> : null}
+                  <h1 className="title">{thisProduct.Name}</h1>
+                  <p className="paragraph my-[10px]">
+                    {" "}
+                    {thisProduct.Name} is catchy and attention grabbing, thus
+                    easy to remember and recall.
+                  </p>
+                  <div className="specialty-chips ">
+                    <h1>Domain</h1>
+                    <h1>Business</h1>
+                    {thisProduct.Premium ? <h1>Premium</h1> : null}
 
-                      <h1>{thisProduct.Company}</h1>
-                      <h1>{thisProduct.Category}</h1>
+                    {thisProduct.Company ? (
+                      <>
+                        <h1>{thisProduct.Company}</h1>
+                      </>
+                    ) : null}
+
+                    {thisProduct.Category ? (
+                      <>
+                        <h1>{thisProduct.Category}</h1>
+                      </>
+                    ) : null}
+                  </div>
+                  <div className="specialty-chips-two">
+                    <div>
+                      <h1 className="heading !text-[grey] !text-[16px]">Age</h1>
+                      <p className="paragraph">19 years</p>
                     </div>
-                    <div className="specialty-chips-two">
-                      <div>
-                        <h1 className="heading !text-[grey]">Age</h1>
-                        <p className="paragraph">19 years</p>
-                      </div>
-                      <div>
-                        <h1 className="heading !text-[grey]">Domain Expires</h1>
-                        <p className="paragraph">9 months</p>
-                      </div>
-                      <div>
-                        <h1 className="heading !text-[grey]">Registrar</h1>
-                        <p className="paragraph">Epik, Inc.</p>
+                    <div>
+                      <h1 className="heading !text-[grey] !text-[16px]">
+                        Domain Expires
+                      </h1>
+                      <p className="paragraph">9 months</p>
+                    </div>
+                    <div>
+                      <h1 className="heading !text-[grey] !text-[16px]">
+                        Registrar
+                      </h1>
+                      <p className="paragraph">Epik, Inc.</p>
+                    </div>
+                  </div>
+                  {!isAuth ? (
+                    <div className="login-request ">
+                      <div className="login-request-content">
+                        <h1 className="login-request-heading">
+                          Please login to view the detailed information of{" "}
+                          {thisProduct.Name}
+                        </h1>
+                        <br />
+                        <Link
+                          to="/signup"
+                          className="red-btn !px-[20px] !py-[0px] !m-0"
+                        >
+                          SIGN UP FOR FREE
+                        </Link>
+                        <br />
+
+                        <p className="paragraph">
+                          Already have an account?{" "}
+                          <span>
+                            <Link
+                              to="/login"
+                              className="text-pent border-b-[2px] border-b border-[#5fa8d3]"
+                            >
+                              Login
+                            </Link>
+                          </span>
+                        </p>
                       </div>
                     </div>
+                  ) : (
                     <div className="bid-history-div">
                       <h1 className="heading text-black mt-[20px] text-left">
                         Bid history
@@ -209,7 +226,7 @@ function ProductDetail(props) {
                                 Be the first one and grab it.
                               </p>
                             ) : (
-                              <div className="relative">
+                              <div className="relative bid-table">
                                 <div class="paragraph text-left !text-black bid-history-item flex justify-between bid-history-tags">
                                   <p class="bidder-name text-white !text-[20px]">
                                     Bidder
@@ -248,9 +265,9 @@ function ProductDetail(props) {
                         )}
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
 
             <div className="ProductDetail-right">
