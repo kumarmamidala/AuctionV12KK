@@ -24,8 +24,6 @@ import "react-awesome-slider/dist/styles.css";
 import $ from "jquery";
 import ProgressBar from "../components/ProgressBar";
 
-import ball from "./../components/Hero/media/yellowspot.png";
-
 function Home() {
   const productss = useContext(ProductContext);
   const AutoplaySlider = withAutoplay(AwesomeSlider);
