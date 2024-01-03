@@ -22,6 +22,9 @@ import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 
 import $ from "jquery";
+import ProgressBar from "../components/ProgressBar";
+
+import ball from "./../components/Hero/media/yellowspot.png";
 
 function Home() {
   const productss = useContext(ProductContext);
@@ -44,8 +47,10 @@ function Home() {
 
   return (
     <div className="flex flex-col max-w-10xl mx-auto scroll-smooth home-main-div">
+      <ProgressBar />
       <TopBar />
       <Hero />
+
       <div className="ads-flowcards-div">
         <Ads />
         <FlowCards />
